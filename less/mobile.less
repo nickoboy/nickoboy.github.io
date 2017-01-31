@@ -1,0 +1,593 @@
+@import "_normalize.less";
+@import "_fonts.less";
+@import "_variables.less";
+
+@media (max-width: 1200px) {
+
+  .tourism{
+    background-size: auto 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .school a,
+  #header .child-cources a:before{
+    background-size: auto 105%;
+  }
+
+}
+/*
+@media (max-width: 959px) {
+  .top-menu li{
+    font-size: 11px;
+    padding: 0 5px;
+  }
+  #header .for-desktop p,
+  #header .for-desktop p span{
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .left-menu li{
+    font-size: 13px;
+  }
+  .slogan .desktop-content{
+    padding-right: 20px;
+    min-height: 370px;
+  }
+  .news .block p{
+    max-height: inherit;
+  }
+  .recommended h3{
+    font-size: 24px;
+    line-height: 22px;
+  }
+  .recommended a{
+    font-size: 15px;
+  }
+  .recommended{
+    background-size:cover;
+    &:hover, &:focus{
+      background-size:cover;
+    }
+  }
+  .cources .links li a{
+    font-size: 15px;
+  }
+  .tourism{
+    height: 120px;
+    h2{
+      padding-top: 16px;
+    }
+  }
+  .cources-slider .slider{
+    margin-right: 15px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  .img-links li a{
+    font-size: 11px;
+  }
+  footer .develop-desktop{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  footer p{
+    margin-left: -60px;
+  }
+  .logo{
+    margin-left: 0;
+  }
+}*/
+.mobile{
+  min-width: 300px;
+  font-size:15px; 
+  line-height: 19px;
+  color:@col1; 
+  .featured-cources p{
+    line-height: 22px;
+  }  
+  .cources p .top-info, .cources p .bot-info{
+    font-size: 15px;
+  }
+  .school p{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .container{ 
+    max-width: 480px; 
+    padding: 0 20px; 
+    display: block;
+  }
+  #header, #main{
+    > .container{
+      padding: 0;
+    }
+  }
+  .col1, .col2, .col3{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    .inner{
+      padding: 0;
+    }
+  }
+  .inner{
+    padding: 0;
+  }
+  .container > div:first-child.col1{
+    width: 100%;
+  }
+  .full-width{
+    max-width: 480px;
+  }
+  .menu-button-fixed{
+    visibility: hidden;
+  }
+  .menu-button-fixed.fixed{
+    visibility: visible;
+  }
+  .for-mobile, 
+  .menu-button,
+  .menu-button-fixed,
+  .slogan > img,
+  .news h5,
+  .develop,
+  #main .child-cources{
+    display: block;
+  }
+  .for-desktop,
+  .left-menu,
+  .social,
+  .logo span,
+  .top-menu,
+  .slogan .desktop-content,
+  .news .label,
+  .news .block img,
+  .recommended,
+  .tourism,
+  .recipe,
+  #header .child-cources,
+  .cources-slider,
+  .develop-desktop,
+  .cards{
+    display: none;
+  }
+  #header .for-mobile{
+    padding-top: 42px;
+  }
+  .logo{
+    float: left;
+    background: none;
+    margin-top: 30px;
+    margin-right: 28px;
+    margin-bottom: 17px;
+    margin-left: 30px;
+    max-width: 98px;
+  }
+  .slogan span{
+    top: 32px;
+    right: 28px;
+    width: 260px;
+    font-size: 32px;
+    font-family: @font2;
+    line-height: 27px;
+    padding-right: 0;
+  }
+  .news .block p{
+    line-height: 18px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    max-height: 108px;
+  }
+  .cources, .info{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cources p .address{
+    display: inline;
+  }
+  .cources p .bot-info{
+    padding-top: 3px;
+  }
+  .cources{
+    padding-top: 32px;
+    padding-bottom: 39px;
+  }
+  .cources .links li a{
+    font-size: 17px;
+  }
+  .cards a{    
+    height: 120px;
+    position: relative;
+    background: url(../images/bg-2.jpg) center 0 no-repeat;
+    background-size: cover;
+  }
+  .info h3{
+    font-size: 26px;
+    line-height: 23px;
+    max-width: 380px;
+  }
+  h3{
+    font-size: 26px;
+    line-height: 22px;
+    padding-bottom: 10px;
+  }
+  .img-links li img{
+    min-height: 170px;
+    margin-bottom: 3px;
+  }
+  .img-links li{
+    padding-bottom: 20px;
+    a{
+       .link(@col2);
+       font-size: inherit;
+       &:hover, &:focus{
+        border-color: transparent;
+       }
+    }
+    .img{
+      min-height: 170px;
+    }
+  }
+  .img-links{
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  .info{
+    padding-top: 0px;
+    padding-bottom: 36px;
+    p{
+      max-width: 350px;
+      padding-bottom: 0px;
+    }
+  }
+  footer .col2{
+    overflow: inherit;
+  }
+  footer .col1{
+    float: left;
+    width: auto !important;
+  }
+  footer p{
+    margin-left: 0;
+  }
+  footer{
+    max-width: 480px;
+    padding-top: 32px;
+    font-size: 13px;
+    line-height: 16px;
+    padding-bottom: 0;
+    .copyright{ 
+      margin-left: 0;
+      &:before{
+        top: 0;
+      }
+    }
+    .pay{
+      float: left;
+      margin-right: 54px;
+      padding-top: 3px;
+      margin-top: 0;
+      li{
+        padding-bottom: 16px;
+        display: block;
+        margin-right: 0;
+      }
+    }
+  }  
+  .top-block{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    p{
+      display: none;
+    }
+    h3{
+      line-height: 26px;
+    }
+  }
+  #header .filters-toogle li{
+    margin-bottom: 3px;
+  }
+  #header .filters-toogle li a:before, #header .filters-toogle li a:after{
+    top: 3px;
+  }
+  .timetable {
+    border: none;
+  }
+  .timetable td{
+    padding: 20px 30px 10px;
+    display: block;
+    border: none;
+    border-top: 1px solid #ededed;
+  }
+  .timetable .date{
+    font-size: 18px;
+    font-family: "PFHandbookPro-Regular";
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px
+  }
+  .timetable .date .day{
+    background: none;
+    padding: 0;
+  }
+  .timetable .date .separator:before{
+    content: ",";
+  }
+  .timetable .info{
+    padding: 0;
+    font-size: 15px;
+  }
+  .popup .content-popup{
+    top: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 264px;
+    margin-left: -132px;
+    padding: 36px 20px;
+  }
+  .popup .info{
+    padding: 0 18px;
+  }
+  .popup .left-block{
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 6px;
+    img{
+      margin-bottom: 16px;
+    }
+  }
+  .popup p{
+    height: auto;
+    font-size: 15px;
+    line-height: 19px;
+    span{
+      &:before{
+        display: none;
+      }
+    }
+  }
+  .popup .price{
+    font-size: 15px;
+  }
+  .popup .price del{
+    margin-left: 0;
+  }
+  .top-block .slider-container{
+    display: none;
+  }
+  .sort{
+    padding-top: 0;
+    h3{
+      font-size: 36px;
+      display: block;
+    }
+    .sorting{
+      float: none;
+      font-size: 15px;
+      span{
+        display: block;
+      }
+    }
+  }
+  .top-block.courses{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  header .col3{
+    overflow: inherit;
+  }
+  .sort .jqselect{
+    margin-left: 0;
+  }
+  .course .slider-container{
+    width: 100%;
+    height: 350px;
+  }
+  .course .text-info{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 370px;
+  }
+  .course .price .btn{
+    width: 250px;
+    .box-sizing(border-box);
+    float: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .course .slider-container .slider-course img{
+    max-width: inherit;
+  }
+  .course .text-info h3{
+    font-size: 26px;
+    line-height: 29px;
+    padding-right: 0;
+  }
+  .block-bottom-indent, {
+    margin-bottom: 40px;
+  }
+  .block-bottom-indent-2 {
+    margin-bottom: 10px;
+  }
+  .wrap-inner {
+    padding: 0 20px;
+  }
+  .recommend-block {
+    width: 50%;
+    &.-block-3 {
+      display: none;
+    }
+  }
+  .recommend-title {
+    font-size: 18px;
+    line-height: 0.8;
+    margin-bottom: 0;
+  }
+  .reviews-link {
+    font-size: 18px;
+
+  }
+  h3 > .reviews-link {
+    margin-left: 12px;
+  }
+  .heading-indent {
+    padding-left: 0;
+  }
+  .slider-top-wide-wrap {
+    display: none;
+  }
+  .container{ 
+    &.-with-wide-slider {
+      margin-bottom: 30px;
+    }
+  }
+  .courses-row {
+    margin-bottom: 20px;
+    padding: 20px 45px;
+  }
+  .subpage-aside,
+  .subpage-content {
+    float: none;
+    width: auto;
+  }
+  .courses-aside-title {
+    margin: 0 0 5px;
+  }
+  .courses-carousel {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .courses-carousel-item {
+    margin: 0;
+    padding: 0 8px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 479px) {
+  .mobile{
+    .course .thumb-course{
+      max-width: 300px;
+    }
+    #header p .tel{
+      display: none;
+    }
+    .phones{
+      display: block;
+    }
+    .menu-button-fixed .mail,
+    .menu-button .mail{
+      display: none;
+    }
+    .slogan{
+      background: url(../images/bg-slogan2.jpg) center 0 no-repeat;
+      background-size: cover;
+      min-height: 401px;
+      img{
+        opacity: 0;
+      }
+      span{
+        right: 30px;
+        left: 30px;
+        width: auto;
+        text-align: center;
+      }
+    }
+    .img-links li img{
+      max-width: inherit;
+      position: relative;
+      left: 50%;
+      .transform(translateX(-50%));
+    }
+    .img-links li a:hover img{
+      .transform(scale(1.02) translateX(-50%));
+    }
+    .img-links li:nth-child(3) img{
+      max-width: 100%;
+    }
+    .courses-carousel {
+      .slick-arrow {
+        top: 20%;
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .mobile{
+    .disabled-mobile{
+      display: none;
+    }
+    .logo{
+      margin-right: 18px;
+    }
+    #header p span{
+      margin-right: 0;
+      font-size: 14px;
+    }
+    .child-cources span{
+      padding: 0 30px;
+      top: 49px;
+      .box-sizing(border-box);
+    }
+    .cources .links{
+      padding-bottom: 7px;
+      li{
+        padding-bottom: 14px;
+      }
+    }
+    .school a{
+      background-size: cover;
+    }
+    .news .block p{
+      margin-right: 10px;
+      span{
+        display: none;
+      }
+    }
+    footer .pay{
+      margin-right: 20px;
+    }
+    .info-text{
+      overflow: hidden;
+    }
+    .img-links li img{    
+      width: auto;
+    }
+    .develop .container{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .course .price > span{
+      font-size: 15px;
+    }
+    .recommend-row {
+      margin: 0;
+    }
+    .recommend-block {
+      padding: 0;
+      width: 100%;
+      &.-block-2 {
+        display: none;
+      }
+    }
+    .courses-carousel-item {
+      width: auto;
+      > img {
+        width: 100%;
+      }
+    }
+    .courses-carousel {
+      .slick-arrow {
+        top: 30%;
+      }
+    }
+  }
+}
+
+
+

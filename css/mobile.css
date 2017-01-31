@@ -1,0 +1,983 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFHandbookPro-Regular";
+  src: url('../fonts/PFHandbookPro/PFHandbookPro-Regular.eot');
+  src: url("../fonts/PFHandbookPro/PFHandbookPro-Regular.woff") format("woff"), url("../fonts/PFHandbookPro/PFHandbookPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFDintextcondPro-Regular";
+  src: url('../fonts/PFDintextcondPro/pfdintextcondpro-regular-webfont.eot');
+  src: url("../fonts/PFDintextcondPro/pfdintextcondpro-regular-webfont.woff") format("woff"), url("../fonts/PFDintextcondPro/pfdintextcondpro-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PFDinTextPro-Medium";
+  src: url('../fonts/PFDintextcondPro/PFDinTextPro-Medium.eot');
+  src: url("../fonts/PFDintextcondPro/PFDinTextPro-Medium.woff") format("woff"), url("../fonts/PFDintextcondPro/PFDinTextPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ==========================================================================
+  Color variables
+  ========================================================================== */
+/* ==========================================================================
+  Fonts variables
+  ========================================================================== */
+@media (max-width: 1200px) {
+  .tourism {
+    background-size: auto 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .school a,
+  #header .child-cources a:before {
+    background-size: auto 105%;
+  }
+}
+/*
+@media (max-width: 959px) {
+  .top-menu li{
+    font-size: 11px;
+    padding: 0 5px;
+  }
+  #header .for-desktop p,
+  #header .for-desktop p span{
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .left-menu li{
+    font-size: 13px;
+  }
+  .slogan .desktop-content{
+    padding-right: 20px;
+    min-height: 370px;
+  }
+  .news .block p{
+    max-height: inherit;
+  }
+  .recommended h3{
+    font-size: 24px;
+    line-height: 22px;
+  }
+  .recommended a{
+    font-size: 15px;
+  }
+  .recommended{
+    background-size:cover;
+    &:hover, &:focus{
+      background-size:cover;
+    }
+  }
+  .cources .links li a{
+    font-size: 15px;
+  }
+  .tourism{
+    height: 120px;
+    h2{
+      padding-top: 16px;
+    }
+  }
+  .cources-slider .slider{
+    margin-right: 15px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  .img-links li a{
+    font-size: 11px;
+  }
+  footer .develop-desktop{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  footer p{
+    margin-left: -60px;
+  }
+  .logo{
+    margin-left: 0;
+  }
+}*/
+.mobile {
+  min-width: 300px;
+  font-size: 15px;
+  line-height: 19px;
+  color: #231f20;
+}
+.mobile .featured-cources p {
+  line-height: 22px;
+}
+.mobile .cources p .top-info,
+.mobile .cources p .bot-info {
+  font-size: 15px;
+}
+.mobile .school p {
+  font-size: 15px;
+  line-height: 18px;
+}
+.mobile .container {
+  max-width: 480px;
+  padding: 0 20px;
+  display: block;
+}
+.mobile #header > .container,
+.mobile #main > .container {
+  padding: 0;
+}
+.mobile .col1,
+.mobile .col2,
+.mobile .col3 {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.mobile .col1 .inner,
+.mobile .col2 .inner,
+.mobile .col3 .inner {
+  padding: 0;
+}
+.mobile .inner {
+  padding: 0;
+}
+.mobile .container > div:first-child.col1 {
+  width: 100%;
+}
+.mobile .full-width {
+  max-width: 480px;
+}
+.mobile .menu-button-fixed {
+  visibility: hidden;
+}
+.mobile .menu-button-fixed.fixed {
+  visibility: visible;
+}
+.mobile .for-mobile,
+.mobile .menu-button,
+.mobile .menu-button-fixed,
+.mobile .slogan > img,
+.mobile .news h5,
+.mobile .develop,
+.mobile #main .child-cources {
+  display: block;
+}
+.mobile .for-desktop,
+.mobile .left-menu,
+.mobile .social,
+.mobile .logo span,
+.mobile .top-menu,
+.mobile .slogan .desktop-content,
+.mobile .news .label,
+.mobile .news .block img,
+.mobile .recommended,
+.mobile .tourism,
+.mobile .recipe,
+.mobile #header .child-cources,
+.mobile .cources-slider,
+.mobile .develop-desktop,
+.mobile .cards {
+  display: none;
+}
+.mobile #header .for-mobile {
+  padding-top: 42px;
+}
+.mobile .logo {
+  float: left;
+  background: none;
+  margin-top: 30px;
+  margin-right: 28px;
+  margin-bottom: 17px;
+  margin-left: 30px;
+  max-width: 98px;
+}
+.mobile .slogan span {
+  top: 32px;
+  right: 28px;
+  width: 260px;
+  font-size: 32px;
+  font-family: "PFHandbookPro-Regular";
+  line-height: 27px;
+  padding-right: 0;
+}
+.mobile .news .block p {
+  line-height: 18px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  max-height: 108px;
+}
+.mobile .cources,
+.mobile .info {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mobile .cources p .address {
+  display: inline;
+}
+.mobile .cources p .bot-info {
+  padding-top: 3px;
+}
+.mobile .cources {
+  padding-top: 32px;
+  padding-bottom: 39px;
+}
+.mobile .cources .links li a {
+  font-size: 17px;
+}
+.mobile .cards a {
+  height: 120px;
+  position: relative;
+  background: url(../images/bg-2.jpg) center 0 no-repeat;
+  background-size: cover;
+}
+.mobile .info h3 {
+  font-size: 26px;
+  line-height: 23px;
+  max-width: 380px;
+}
+.mobile h3 {
+  font-size: 26px;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+.mobile .img-links li img {
+  min-height: 170px;
+  margin-bottom: 3px;
+}
+.mobile .img-links li {
+  padding-bottom: 20px;
+}
+.mobile .img-links li a {
+  color: #ff6112;
+  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  font-size: inherit;
+}
+.mobile .img-links li a:hover,
+.mobile .img-links li a:focus {
+  border-color: transparent;
+}
+.mobile .img-links li .img {
+  min-height: 170px;
+}
+.mobile .img-links {
+  padding-bottom: 10px;
+  padding-top: 0;
+}
+.mobile .info {
+  padding-top: 0px;
+  padding-bottom: 36px;
+}
+.mobile .info p {
+  max-width: 350px;
+  padding-bottom: 0px;
+}
+.mobile footer .col2 {
+  overflow: inherit;
+}
+.mobile footer .col1 {
+  float: left;
+  width: auto !important;
+}
+.mobile footer p {
+  margin-left: 0;
+}
+.mobile footer {
+  max-width: 480px;
+  padding-top: 32px;
+  font-size: 13px;
+  line-height: 16px;
+  padding-bottom: 0;
+}
+.mobile footer .copyright {
+  margin-left: 0;
+}
+.mobile footer .copyright:before {
+  top: 0;
+}
+.mobile footer .pay {
+  float: left;
+  margin-right: 54px;
+  padding-top: 3px;
+  margin-top: 0;
+}
+.mobile footer .pay li {
+  padding-bottom: 16px;
+  display: block;
+  margin-right: 0;
+}
+.mobile .top-block {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mobile .top-block p {
+  display: none;
+}
+.mobile .top-block h3 {
+  line-height: 26px;
+}
+.mobile #header .filters-toogle li {
+  margin-bottom: 3px;
+}
+.mobile #header .filters-toogle li a:before,
+.mobile #header .filters-toogle li a:after {
+  top: 3px;
+}
+.mobile .timetable {
+  border: none;
+}
+.mobile .timetable td {
+  padding: 20px 30px 10px;
+  display: block;
+  border: none;
+  border-top: 1px solid #ededed;
+}
+.mobile .timetable .date {
+  font-size: 18px;
+  font-family: "PFHandbookPro-Regular";
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.mobile .timetable .date .day {
+  background: none;
+  padding: 0;
+}
+.mobile .timetable .date .separator:before {
+  content: ",";
+}
+.mobile .timetable .info {
+  padding: 0;
+  font-size: 15px;
+}
+.mobile .popup .content-popup {
+  top: 30px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  width: 264px;
+  margin-left: -132px;
+  padding: 36px 20px;
+}
+.mobile .popup .info {
+  padding: 0 18px;
+}
+.mobile .popup .left-block {
+  float: none;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 6px;
+}
+.mobile .popup .left-block img {
+  margin-bottom: 16px;
+}
+.mobile .popup p {
+  height: auto;
+  font-size: 15px;
+  line-height: 19px;
+}
+.mobile .popup p span:before {
+  display: none;
+}
+.mobile .popup .price {
+  font-size: 15px;
+}
+.mobile .popup .price del {
+  margin-left: 0;
+}
+.mobile .top-block .slider-container {
+  display: none;
+}
+.mobile .sort {
+  padding-top: 0;
+}
+.mobile .sort h3 {
+  font-size: 36px;
+  display: block;
+}
+.mobile .sort .sorting {
+  float: none;
+  font-size: 15px;
+}
+.mobile .sort .sorting span {
+  display: block;
+}
+.mobile .top-block.courses {
+  margin-right: 0;
+  margin-left: 0;
+}
+.mobile header .col3 {
+  overflow: inherit;
+}
+.mobile .sort .jqselect {
+  margin-left: 0;
+}
+.mobile .course .slider-container {
+  width: 100%;
+  height: 350px;
+}
+.mobile .course .text-info {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 370px;
+}
+.mobile .course .price .btn {
+  width: 250px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  float: none;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 0;
+}
+.mobile .course .slider-container .slider-course img {
+  max-width: inherit;
+}
+.mobile .course .text-info h3 {
+  font-size: 26px;
+  line-height: 29px;
+  padding-right: 0;
+}
+.mobile .block-bottom-indent {
+  margin-bottom: 40px;
+}
+.mobile .block-bottom-indent-2 {
+  margin-bottom: 10px;
+}
+.mobile .wrap-inner {
+  padding: 0 20px;
+}
+.mobile .recommend-block {
+  width: 50%;
+}
+.mobile .recommend-block.-block-3 {
+  display: none;
+}
+.mobile .recommend-title {
+  font-size: 18px;
+  line-height: 0.8;
+  margin-bottom: 0;
+}
+.mobile .reviews-link {
+  font-size: 18px;
+}
+.mobile h3 > .reviews-link {
+  margin-left: 12px;
+}
+.mobile .heading-indent {
+  padding-left: 0;
+}
+.mobile .slider-top-wide-wrap {
+  display: none;
+}
+.mobile .container.-with-wide-slider {
+  margin-bottom: 30px;
+}
+.mobile .courses-row {
+  margin-bottom: 20px;
+  padding: 20px 45px;
+}
+.mobile .subpage-aside,
+.mobile .subpage-content {
+  float: none;
+  width: auto;
+}
+.mobile .courses-aside-title {
+  margin: 0 0 5px;
+}
+.mobile .courses-carousel {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.mobile .courses-carousel-item {
+  margin: 0;
+  padding: 0 8px;
+  text-align: left;
+}
+@media (max-width: 479px) {
+  .mobile .course .thumb-course {
+    max-width: 300px;
+  }
+  .mobile #header p .tel {
+    display: none;
+  }
+  .mobile .phones {
+    display: block;
+  }
+  .mobile .menu-button-fixed .mail,
+  .mobile .menu-button .mail {
+    display: none;
+  }
+  .mobile .slogan {
+    background: url(../images/bg-slogan2.jpg) center 0 no-repeat;
+    background-size: cover;
+    min-height: 401px;
+  }
+  .mobile .slogan img {
+    opacity: 0;
+  }
+  .mobile .slogan span {
+    right: 30px;
+    left: 30px;
+    width: auto;
+    text-align: center;
+  }
+  .mobile .img-links li img {
+    max-width: inherit;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+  .mobile .img-links li a:hover img {
+    transform: scale(1.02) translateX(-50%);
+    -o-transform: scale(1.02) translateX(-50%);
+    -moz-transform: scale(1.02) translateX(-50%);
+    -webkit-transform: scale(1.02) translateX(-50%);
+    -ms-transform: scale(1.02) translateX(-50%);
+  }
+  .mobile .img-links li:nth-child(3) img {
+    max-width: 100%;
+  }
+  .mobile .courses-carousel .slick-arrow {
+    top: 20%;
+  }
+}
+@media (max-width: 420px) {
+  .mobile .disabled-mobile {
+    display: none;
+  }
+  .mobile .logo {
+    margin-right: 18px;
+  }
+  .mobile #header p span {
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .mobile .child-cources span {
+    padding: 0 30px;
+    top: 49px;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+  }
+  .mobile .cources .links {
+    padding-bottom: 7px;
+  }
+  .mobile .cources .links li {
+    padding-bottom: 14px;
+  }
+  .mobile .school a {
+    background-size: cover;
+  }
+  .mobile .news .block p {
+    margin-right: 10px;
+  }
+  .mobile .news .block p span {
+    display: none;
+  }
+  .mobile footer .pay {
+    margin-right: 20px;
+  }
+  .mobile .info-text {
+    overflow: hidden;
+  }
+  .mobile .img-links li img {
+    width: auto;
+  }
+  .mobile .develop .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mobile .course .price > span {
+    font-size: 15px;
+  }
+  .mobile .recommend-row {
+    margin: 0;
+  }
+  .mobile .recommend-block {
+    padding: 0;
+    width: 100%;
+  }
+  .mobile .recommend-block.-block-2 {
+    display: none;
+  }
+  .mobile .courses-carousel-item {
+    width: auto;
+  }
+  .mobile .courses-carousel-item > img {
+    width: 100%;
+  }
+  .mobile .courses-carousel .slick-arrow {
+    top: 30%;
+  }
+}

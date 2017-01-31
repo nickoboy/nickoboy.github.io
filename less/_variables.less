@@ -1,0 +1,32 @@
+/* ==========================================================================
+  Color variables
+  ========================================================================== */
+
+@col1: #231f20;
+@col2: #ff6112;
+@col3: #00709f;
+@col4: #f5f6f8;
+@col5: #f4f4f4;
+@col6: #9a3001;
+@col7: #808080;
+
+/* ==========================================================================
+  Fonts variables
+  ========================================================================== */
+
+
+@font1: Calibri, Arial, sans-serif;
+@font2: "PFHandbookPro-Regular";
+@fa: 'FontAwesome';
+
+
+.box-sizing(@param){ box-sizing:@param; -o-box-sizing:@param; -moz-box-sizing:@param; -webkit-box-sizing:@param; -ms-box-sizing:@param;}
+.box-shadow(@param){ box-shadow:@param; -o-box-shadow:@param; -moz-box-shadow:@param; -webkit-box-shadow:@param; -ms-box-shadow:@param;}
+.border-radius(@param){ border-radius:@param; -o-border-radius:@param; -moz-border-radius:@param; -webkit-border-radius:@param; -ms-border-radius:@param;}
+.transition(@speed){transition: color @speed, background @speed, border @speed, transform @speed;   -webkit-transition:  color @speed, background @speed, border @speed, transform @speed; /* Safari and Chrome */   -moz-transition:  color @speed, background @speed, border @speed, transform @speed; /* Firefox 4 */   -o-transition:  color @speed, background @speed, border @speed, transform @speed; /* Opera */}
+.delay(@time){transition-delay: @time; -o-transition-delay: @time; -webkit-transition-delay: @time; -moz-transition-delay: @time; -ms-transition-delay: @time;}
+
+.transform(@param){ transform:@param; -o-transform:@param; -moz-transform:@param; -webkit-transform:@param; -ms-transform:@param;}
+.transform-origin(@param){ transform-origin:@param; -o-transform-origin:@param; -moz-transform-origin:@param; -webkit-transform-origin:@param; -ms-transform-origin:@param;}
+
+.link(@param){ color: @param; border-bottom: 1px solid  rgba(red(@param), green(@param), blue(@param), 0.3);}
