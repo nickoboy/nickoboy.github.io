@@ -2488,8 +2488,9 @@ footer .develop-desktop a:focus {
   float: left;
   width: 80%;
 }
-.hcc.hc__footer {
-  display: none;
+.hcc.hc__footer,
+.hc__ht {
+  display: none !important;
 }
 /* Slider wide */
 .slider-top-wide-wrap {
