@@ -553,7 +553,7 @@ a:focus {
   clear: both;
 }
 .container.-with-wide-slider {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 #wrapper {
   position: relative;
@@ -2492,6 +2492,9 @@ footer .develop-desktop a:focus {
 .hc__ht {
   display: none !important;
 }
+#hypercomments_widget {
+  min-height: 190px;
+}
 /* Slider wide */
 .slider-top-wide-wrap {
   height: 400px;
@@ -2507,6 +2510,149 @@ footer .develop-desktop a:focus {
 }
 .slider-top-wide img {
   cursor: pointer;
+}
+/* Courses main info */
+.courses-program-header {
+  padding-left: 20%;
+}
+.courses-title-top {
+  margin-bottom: 4px;
+}
+.courses-title-top > a {
+  font: 18px/1.2 "PFHandbookPro-Regular";
+  display: inline-block;
+  text-decoration: underline;
+  color: #000;
+}
+.courses-title-top > a:hover {
+  text-decoration: none;
+}
+.courses-main-title {
+  color: #00709f;
+  font: 48px/0.9 "PFHandbookPro-Regular";
+  margin: 0 0 20px;
+  position: relative;
+}
+.courses-main-title .courses-label {
+  color: #fff;
+  background: #ff6112;
+  font-size: 18px;
+  line-height: 32px;
+  right: 100%;
+  top: 8px;
+  margin-right: 24px;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0 18px;
+}
+.courses-main-title .courses-label:after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 0 16px 12px;
+  border-color: transparent transparent transparent #ff6112;
+}
+.courses-col-list {
+  box-sizing: border-box;
+  float: left;
+  padding-right: 5%;
+  width: 20%;
+}
+.courses-program-aside-title {
+  font: 24px/0.9 "PFHandbookPro-Regular";
+  margin-bottom: 12px;
+}
+.courses-program-aside-item {
+  margin-bottom: 16px;
+}
+.courses-program-aside-item .date {
+  background: #f5f6f8;
+  padding: 1px 5px 3px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.courses-program-aside-item .link:hover {
+  border-color: transparent !important;
+}
+.courses-program-aside-item .link.-blue {
+  color: #00709f;
+  border-bottom: 1px solid rgba(0, 112, 159, 0.3);
+}
+.courses-program-aside-item .link.-orange {
+  color: #ff6112;
+  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+}
+.courses-program-more > a {
+  color: #00709f;
+  border-bottom: 1px solid rgba(0, 112, 159, 0.3);
+}
+.courses-program-more > a:hover {
+  border-color: transparent;
+}
+.courses-col-prices {
+  padding-top: 20px;
+  box-sizing: border-box;
+  float: left;
+  width: 19%;
+  text-align: center;
+}
+.courses-col-prices .courses-price-block {
+  margin-bottom: 18px;
+}
+.courses-col-prices .courses-price-block .courses-desc,
+.courses-col-prices .courses-price-block .courses-old-price {
+  font: 18px/1.2 "PFHandbookPro-Regular";
+  text-transform: uppercase;
+}
+.courses-col-prices .courses-price-block .courses-old-price {
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+.courses-col-prices .courses-price-block .courses-price {
+  color: #ff6112;
+  font: bold 53px/0.7 "PFHandbookPro-Regular";
+  letter-spacing: -0.025em;
+  margin-bottom: 2px;
+}
+.courses-col-prices .courses-price-block .courses-price > .rouble {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 38px;
+}
+.courses-col-request {
+  box-sizing: border-box;
+  float: left;
+  width: 24%;
+  padding: 0 2%;
+  text-align: center;
+}
+.courses-col-request .btn-block {
+  background: #f7f7f7;
+  padding: 20px 18px 16px;
+  margin-bottom: 7px;
+}
+.courses-request-btn {
+  font: 24px/1.2 "PFHandbookPro-Regular";
+  color: #fff;
+  background: #00709f;
+  padding: 8px 5px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+.courses-request-btn:hover {
+  background: #004c6c;
+}
+.courses-col-text {
+  box-sizing: border-box;
+  float: right;
+  width: 36%;
+  padding-top: 14px;
+}
+.courses-col-text > p {
+  padding-bottom: 7px;
 }
 /* Courses */
 .courses-row {

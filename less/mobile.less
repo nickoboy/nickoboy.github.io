@@ -443,7 +443,7 @@
   }
   .container{ 
     &.-with-wide-slider {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
   }
   .courses-row {
@@ -466,6 +466,67 @@
     margin: 0;
     padding: 0 8px;
     text-align: left;
+  }
+  .courses-program-header  {
+    padding-left: 0;
+  }
+  .courses-main-title {
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    > .courses-label {
+      font-size: 14px;
+      line-height: 25px;
+      display: inline-block;
+      position: relative;
+      right: auto;
+      top: auto;
+      margin-bottom: 6px;
+      &:after {
+        border-width: 13px 0 12px 12px;
+      }
+    }
+    > .text {
+      display: block;
+    }
+  }
+  .courses-col-list {
+    display: none;
+  }
+  .courses-col-text {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    margin-bottom: 24px;
+  }
+  .courses-title-top {
+    margin-bottom: 10px;
+  }
+  .courses-col-request {
+    width: 55%;
+    background: #f7f7f7;
+    padding-bottom: 20px;
+    .btn-block {
+      padding-bottom: 0;
+    }
+  }
+  .courses-col-prices {
+    width: 45%;
+  }
+  .courses-col-prices {
+    .courses-price-block {
+      .courses-desc,
+      .courses-old-price {
+        font: 15px/1.2 @font2;
+      }
+      .courses-price {
+        color: @col2;
+        font-size: 44px;
+        > .rouble {
+          font-size: 30px;
+        }
+      }
+    }
   }
 }
 
@@ -585,6 +646,30 @@
       .slick-arrow {
         top: 30%;
       }
+    }
+    .courses-price-block {
+      float: left;
+      width: 50%;
+      &.-new-price-only {
+        padding-top: 21px;
+      }
+    }
+    .courses-col-prices {
+      background: #f7f7f7;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+    .courses-col-request {
+      padding-bottom: 25px;
+      .btn-block {
+        padding-top: 0;
+      }
+    }
+    .courses-col-request,
+    .courses-col-prices {
+      width: auto;
+      float: none;
+      margin: 0 -25px;
     }
   }
 }

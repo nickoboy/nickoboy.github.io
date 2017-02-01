@@ -835,7 +835,7 @@ th {
   display: none;
 }
 .mobile .container.-with-wide-slider {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .mobile .courses-row {
   margin-bottom: 20px;
@@ -857,6 +857,63 @@ th {
   margin: 0;
   padding: 0 8px;
   text-align: left;
+}
+.mobile .courses-program-header {
+  padding-left: 0;
+}
+.mobile .courses-main-title {
+  font-size: 24px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.mobile .courses-main-title > .courses-label {
+  font-size: 14px;
+  line-height: 25px;
+  display: inline-block;
+  position: relative;
+  right: auto;
+  top: auto;
+  margin-bottom: 6px;
+}
+.mobile .courses-main-title > .courses-label:after {
+  border-width: 13px 0 12px 12px;
+}
+.mobile .courses-main-title > .text {
+  display: block;
+}
+.mobile .courses-col-list {
+  display: none;
+}
+.mobile .courses-col-text {
+  float: none;
+  width: auto;
+  padding-top: 0;
+  margin-bottom: 24px;
+}
+.mobile .courses-title-top {
+  margin-bottom: 10px;
+}
+.mobile .courses-col-request {
+  width: 55%;
+  background: #f7f7f7;
+  padding-bottom: 20px;
+}
+.mobile .courses-col-request .btn-block {
+  padding-bottom: 0;
+}
+.mobile .courses-col-prices {
+  width: 45%;
+}
+.mobile .courses-col-prices .courses-price-block .courses-desc,
+.mobile .courses-col-prices .courses-price-block .courses-old-price {
+  font: 15px/1.2 "PFHandbookPro-Regular";
+}
+.mobile .courses-col-prices .courses-price-block .courses-price {
+  color: #ff6112;
+  font-size: 44px;
+}
+.mobile .courses-col-prices .courses-price-block .courses-price > .rouble {
+  font-size: 30px;
 }
 @media (max-width: 479px) {
   .mobile .course .thumb-course {
@@ -979,5 +1036,29 @@ th {
   }
   .mobile .courses-carousel .slick-arrow {
     top: 30%;
+  }
+  .mobile .courses-price-block {
+    float: left;
+    width: 50%;
+  }
+  .mobile .courses-price-block.-new-price-only {
+    padding-top: 21px;
+  }
+  .mobile .courses-col-prices {
+    background: #f7f7f7;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .mobile .courses-col-request {
+    padding-bottom: 25px;
+  }
+  .mobile .courses-col-request .btn-block {
+    padding-top: 0;
+  }
+  .mobile .courses-col-request,
+  .mobile .courses-col-prices {
+    width: auto;
+    float: none;
+    margin: 0 -25px;
   }
 }
