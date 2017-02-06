@@ -2559,7 +2559,7 @@ footer .develop-desktop a:focus {
 .courses-col-list {
   box-sizing: border-box;
   float: left;
-  padding-right: 5%;
+  padding-right: 6%;
   width: 20%;
 }
 .courses-program-aside-title {
@@ -2571,6 +2571,7 @@ footer .develop-desktop a:focus {
 }
 .courses-program-aside-item .date {
   background: #f5f6f8;
+  display: inline-block;
   padding: 1px 5px 3px;
   line-height: 1;
   margin-bottom: 4px;
@@ -2587,8 +2588,8 @@ footer .develop-desktop a:focus {
   border-bottom: 1px solid rgba(255, 97, 18, 0.3);
 }
 .courses-program-more > a {
-  color: #00709f;
-  border-bottom: 1px solid rgba(0, 112, 159, 0.3);
+  color: #9a3001;
+  border-bottom: 1px solid rgba(154, 48, 1, 0.3);
 }
 .courses-program-more > a:hover {
   border-color: transparent;
@@ -2667,7 +2668,7 @@ footer .develop-desktop a:focus {
   margin: -4px 0 18px 0;
 }
 .courses-aside-item {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .courses-aside-item > .text {
   margin-bottom: 5px;
@@ -2741,4 +2742,15 @@ h3 .reviews-link {
 .recommend-title {
   font-size: 26px;
   line-height: 0.8;
+}
+.recommend-title > a {
+  color: #00709f;
+  border-bottom: 1px solid rgba(0, 112, 159, 0.3);
+}
+.recommend-title > a:hover {
+  border-bottom-color: transparent;
+}
+/* Modals */
+.remodal {
+  text-align: left;
 }

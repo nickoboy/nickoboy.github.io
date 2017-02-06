@@ -846,6 +846,9 @@ th {
   float: none;
   width: auto;
 }
+.mobile .subpage-aside {
+  margin-bottom: 25px;
+}
 .mobile .courses-aside-title {
   margin: 0 0 5px;
 }

@@ -2048,7 +2048,7 @@ footer{
 .courses-col-list {
   box-sizing: border-box;
   float: left;
-  padding-right: 5%;
+  padding-right: 6%;
   width: 20%;
 }
 
@@ -2061,6 +2061,7 @@ footer{
   margin-bottom: 16px;
   .date {
     background: #f5f6f8;
+    display: inline-block;
     padding: 1px 5px 3px;
     line-height: 1;
     margin-bottom: 4px;
@@ -2080,7 +2081,7 @@ footer{
 
 .courses-program-more {
   > a {
-    .link(@col3);
+    .link(#9a3001);
     &:hover {
       border-color: transparent;
     }
@@ -2168,7 +2169,7 @@ footer{
 }
 
 .courses-aside-item {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   > .text {
     margin-bottom: 5px;
     &.-old {
@@ -2254,4 +2255,16 @@ footer{
 .recommend-title {
   font-size: 26px;
   line-height: 0.8;
+  > a {
+    .link(@col3);
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+/* Modals */
+
+.remodal {
+  text-align: left;
 }
