@@ -366,8 +366,51 @@
                 </div>
             </div>
         </div>
-        <div class="remodal" data-remodal-id="modal">
-            
+        <div class="remodal modal-request" data-remodal-id="modal">
+            <button data-remodal-action="close" class="modal-close"></button>
+            <div class="request-selector">
+                <h3 class="big color">Запись на&nbsp;курс <br>&laquo;Худеть или правильно питаться&nbsp;&mdash; это легко&raquo;</h3>
+                <p>Выберите удобный вариант записи:</p>
+                <ul class="request-variant-list">
+                    <li class="item checked js-full-course">
+                        <div class="old-price">10000 <span class="rouble">&#x20bd;</span></div>
+                        <div class="actual-price">9000 <span class="rouble">&#x20bd;</span></div>
+                        <div class="title">полный курс</div>
+                        <div class="modal-btn">Выбрано</div>
+                    </li>
+                    <li class="item actual-price-only js-full-course">
+                        <div class="actual-price">2000 <span class="rouble">&#x20bd;</span></div>
+                        <div class="title">разовое занятие</div>
+                        <div class="modal-btn">Выбрать</div>
+                    </li>
+                    <li class="item single-lesson js-single-lesson">
+                        <div class="title">Свободная заявка на курс</div>
+                        <div class="text">администратор свяжется с&nbsp;вами для уточнения деталей</div>
+                        <div class="modal-btn">Выбрать</div>
+                    </li>
+                </ul>
+                <div class="modal-request-footer -top-indent">
+                    <button class="modal-btn -after">Шаг 2: Оформление</button>
+                </div>
+            </div>
+            <div class="payment-send hidden">
+                <div class="modal-request-content">
+                    <h3 class="big color">Оплата прошла успешно</h3>
+                    <p>Оплата на&nbsp;занятие &laquo;Китайская кухня&raquo; в&nbsp;сумме 1450 руб поступила к&nbsp;нам. <br>В&nbsp;течение дня администратор свяжется с&nbsp;вами для уточнения деталей.</p>
+                </div>
+                <div class="modal-request-footer">
+                    <button data-remodal-action="confirm" class="modal-btn">Закрыть окно</button>
+                </div>
+            </div>
+            <div class="request-send hidden">
+                <div class="modal-request-content">
+                    <h3 class="big color">Заявка отправлена</h3>
+                    <p>Заявка на&nbsp;занятие &laquo;Китайская кухня&raquo; успешно отправлена. В&nbsp;течение дня администратор свяжется с&nbsp;вами для уточнения деталей.</p>
+                </div>
+                <div class="modal-request-footer">
+                    <button data-remodal-action="confirm" class="modal-btn">Закрыть окно</button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/plugins/jquery-1.11.3.min.js"></script>

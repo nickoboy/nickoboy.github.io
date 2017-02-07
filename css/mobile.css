@@ -609,8 +609,8 @@ th {
   padding-bottom: 20px;
 }
 .mobile .img-links li a {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
   font-size: inherit;
 }
 .mobile .img-links li a:hover,
@@ -912,11 +912,38 @@ th {
   font: 15px/1.2 "PFHandbookPro-Regular";
 }
 .mobile .courses-col-prices .courses-price-block .courses-price {
-  color: #ff6112;
+  color: #ff6600;
   font-size: 44px;
 }
 .mobile .courses-col-prices .courses-price-block .courses-price > .rouble {
   font-size: 30px;
+}
+.mobile .modal-request {
+  padding-top: 45px;
+}
+.mobile .request-variant-list {
+  display: block;
+  margin: 0;
+}
+.mobile .request-variant-list > .item {
+  display: block;
+  width: 194px;
+  margin: 0 auto;
+  height: auto;
+}
+.mobile .request-variant-list > .item.actual-price-only {
+  padding-top: 20px;
+}
+.mobile .request-variant-list > .item.single-lesson {
+  padding-top: 20px;
+}
+.mobile .request-variant-list > .item > .modal-btn {
+  position: relative;
+  bottom: auto;
+  margin-top: 16px;
+}
+.mobile .request-variant-list > .item .actual-price {
+  margin-bottom: 6px;
 }
 @media (max-width: 479px) {
   .mobile .course .thumb-course {

@@ -1914,6 +1914,10 @@ footer{
 
 /* Helpers */
 
+.hidden {
+  display: none;
+}
+
 .img-full-width {
   display: block;
   width: 100%;
@@ -2132,6 +2136,7 @@ footer{
 }
 
 .courses-request-btn {
+  .transition(0.3s);
   font: 24px/1.2 @font2;
   color: #fff;
   background: @col3;
@@ -2263,8 +2268,141 @@ footer{
   }
 }
 
-/* Modals */
-
-.remodal {
+.modal-request {
+  padding: 30px 30px 40px;
   text-align: left;
+  .modal-close {
+    transition: all 0.3s;
+    background: url(../images/modal-close.png) 0 0 no-repeat;
+    border: none;
+    height: 17px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 18px;
+    &:hover {
+      opacity: .6;
+    }
+  }
+  h3.big {
+    padding-bottom: 14px;
+    padding-right: 20px;
+  }
+  .modal-request-content {
+    margin-bottom: 10px;
+  }
+  .modal-request-footer {
+    text-align: center;
+    &.-top-indent {
+      padding-top: 22px;
+    }
+  }
+  .modal-btn {
+    .transition(0.3s);
+    border: none;
+    background: @col2;
+    color: #fff;
+    cursor: pointer;
+    font: 18px @font2;
+    padding: 5px 15px;
+    text-align: center;
+    &.-after {
+      position: relative;
+      margin-left: -5px;
+      &:after {
+        .transition(0.3s);
+        content: "";
+        position: absolute;
+        right: -12px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 0 16px 12px;
+        border-color: transparent transparent transparent #ff6600;
+      }
+    }
+    &:hover {
+      background-color: #b33700;
+      &:after {
+        border-color: transparent transparent transparent #b33700;
+      }
+    }
+  }
+}
+
+.request-variant-list {
+  display: table;
+  margin: 0 -12px;
+  width: 100%;
+  > .item {
+    box-sizing: border-box;
+    display: table-cell;
+    text-align: center;
+    width: 33.3333%;
+    height: 230px;
+    border: 2px solid transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 16px 10px;
+    vertical-align: top;
+    &.checked {
+      border-color: @col2;
+      .modal-btn {
+        background-color: @col2 !important;
+      }
+    }
+    &.actual-price-only {
+      padding-top: 37px;
+    }
+    &.single-lesson {
+      padding-top: 36px;
+      > .title {
+        margin-bottom: 6px;
+      }
+    }
+    .old-price,
+    .title {
+      font: 18px/1 @font2;
+      text-transform: uppercase;
+    }
+    .old-price {
+      text-decoration: line-through;
+      margin-bottom: 4px;
+      > .rouble {
+        font-family: @font1;
+        font-size: 15px;
+      }
+    }
+    .actual-price {
+      color: @col2;
+      font: bold 53px/0.7 @font2;
+      letter-spacing: -0.025em;
+      margin-bottom: 12px;
+      > .rouble {
+        font-family: @font1;
+        font-size: 38px;
+      }
+    }
+    .text {
+      line-height: 1;
+      color: @col7;
+    }
+
+    &:hover {
+      .modal-btn {
+        background: #085076;
+      }
+    }
+  }
+  .modal-btn {
+    background-color: @col3;
+    box-sizing: border-box;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 106px;
+    position: absolute;
+    bottom: 26px;
+  }
 }

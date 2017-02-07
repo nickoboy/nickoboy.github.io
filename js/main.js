@@ -288,6 +288,11 @@ $(window).load(function(){
 		}
 	})
 
+	$('.request-variant-list > .item').on('click', function() {
+		$('.request-variant-list > .item').find('.modal-btn').text('Выбрать');
+		$(this).find('.modal-btn').text('Выбрано').end().addClass('checked').siblings().removeClass('checked');
+	});
+
 	/*
 	$('.mobile').on("touchstart", function (event) {
 		if ($(event.target).closest(".content-popup, .modal").length) return;

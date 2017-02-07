@@ -404,7 +404,7 @@ html {
   overflow-y: scroll;
 }
 ::selection {
-  background: #ff6112;
+  background: #ff6600;
   color: #fff;
   text-shadow: none;
 }
@@ -478,7 +478,7 @@ h3 a:focus,
 h4 a:focus,
 h5 a:focus,
 h6 a:focus {
-  color: #ff6112;
+  color: #ff6600;
 }
 #wrapper {
   overflow-x: hidden;
@@ -510,7 +510,7 @@ h5 {
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 4px;
-  color: #ff6112;
+  color: #ff6600;
 }
 body {
   font-size: 15px;
@@ -525,14 +525,14 @@ a {
 }
 a:hover,
 a:focus {
-  color: #ff6112;
+  color: #ff6600;
 }
 a.link-color {
   color: #00709f;
 }
 a:focus,
 a:focus {
-  color: #ff6112;
+  color: #ff6600;
 }
 .container {
   max-width: 1280px;
@@ -664,8 +664,8 @@ ol li {
   border-bottom: 1px solid rgba(35, 31, 32, 0.3);
 }
 #header p span a:hover {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 #header .for-desktop p {
   padding-top: 6px;
@@ -685,8 +685,8 @@ ol li {
   border-bottom: none;
 }
 #header .for-desktop p .mail {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 #header .for-desktop p .mail:hover,
 #header .for-desktop p .mail:focus {
@@ -771,7 +771,7 @@ ol li {
   opacity: 0;
 }
 #header .filters-toogle li.filter-2 a {
-  color: #ff6112;
+  color: #ff6600;
 }
 #header .filters-toogle li.filter-2 a:before {
   background-position: right bottom;
@@ -780,8 +780,8 @@ ol li {
   background-position: right 0;
 }
 #header .filters-toogle li.filter-2 a:hover span {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 #header .child-cources {
   float: none;
@@ -890,8 +890,8 @@ ol li {
 }
 .menu-button-fixed .mail a,
 .menu-button .mail a {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 .slogan {
   position: relative;
@@ -1107,8 +1107,8 @@ ol li {
 }
 .phones a:hover,
 .phones a:focus {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 #menu-sidebar {
   position: fixed;
@@ -1159,11 +1159,11 @@ ol li {
 }
 #menu-sidebar ul li a:hover,
 #menu-sidebar ul li a:focus {
-  color: #ff6112;
+  color: #ff6600;
 }
 #menu-sidebar ul li.active a,
 #menu-sidebar ul li.selected a {
-  color: #ff6112;
+  color: #ff6600;
 }
 .menu-open {
   overflow-y: hidden;
@@ -1246,8 +1246,8 @@ ol li {
   padding-top: 0 !important;
 }
 .top-block .mail {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 .top-block .mail:hover,
 .top-block .mail:focus {
@@ -1282,7 +1282,7 @@ ol li {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px solid #ff6112;
+  border: 2px solid #ff6600;
   transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
   -webkit-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
   /* Safari and Chrome */
@@ -1351,7 +1351,7 @@ ol li {
   top: -14px;
 }
 .top-block .caption .price del span {
-  color: #ff6112;
+  color: #ff6600;
   text-decoration: none;
   display: inline-block;
   padding-left: 4px;
@@ -1506,7 +1506,7 @@ ol li {
   padding: 0 10px;
 }
 .course .thumb-course .slick-slide.slick-current span {
-  border-color: #ff6112;
+  border-color: #ff6600;
 }
 .course .text-info {
   padding-left: 54.7%;
@@ -1564,7 +1564,7 @@ ol li {
 .course .price strong {
   font-size: 26px;
   line-height: 19px;
-  color: #ff6112;
+  color: #ff6600;
   font-family: 'PFDinTextPro-Medium';
   display: inline-block;
   position: relative;
@@ -1579,7 +1579,7 @@ ol li {
   right: 2px;
   left: 0;
   height: 1px;
-  background: #ff6112;
+  background: #ff6600;
   top: 50%;
   margin-top: 2px;
 }
@@ -1599,7 +1599,7 @@ ol li {
   line-height: 18px;
   font-family: "PFHandbookPro-Regular";
   color: #fff;
-  background: #ff6112;
+  background: #ff6600;
   padding: 1px 15px 0px;
 }
 .timetable {
@@ -1660,12 +1660,12 @@ ol li {
   display: none;
 }
 .timetable .filter-2 a {
-  color: #ff6112;
+  color: #ff6600;
 }
 .timetable .filter-2 a:hover,
 .timetable .filter-2 a:focus {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 .full-width {
   margin: 0 auto;
@@ -1698,8 +1698,8 @@ ol li {
   content: "...";
 }
 .news .block a {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 .news .block a:hover,
 .news .block a:focus {
@@ -1758,8 +1758,8 @@ ol li {
   padding-right: 20px;
 }
 .cources .link {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 .cources .link:hover,
 .cources .link:focus {
@@ -1791,8 +1791,8 @@ ol li {
   border-color: transparent;
 }
 .cources p a:visited {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 .cources p a:visited:hover,
 .cources p a:visited:focus {
@@ -1824,7 +1824,7 @@ ol li {
   margin-right: 0;
 }
 .cources .links li a {
-  background: #ff6112;
+  background: #ff6600;
   display: block;
   font-size: 17px;
   line-height: 27px;
@@ -1840,7 +1840,7 @@ ol li {
   border: 12px solid transparent;
   border-top-width: 15px;
   border-bottom-width: 15px;
-  border-left-color: #ff6112;
+  border-left-color: #ff6600;
   transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
   -webkit-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
   /* Safari and Chrome */
@@ -1862,10 +1862,10 @@ ol li {
   border-left-color: #004c6c;
 }
 .cources .links li a:hover {
-  background: #c44200;
+  background: #b34700;
 }
 .cources .links li a:hover:after {
-  border-left-color: #c44200;
+  border-left-color: #b34700;
 }
 .recommended {
   background: url(../images/bg-recommended.jpg) center center no-repeat;
@@ -2096,8 +2096,8 @@ ol li {
   max-width: 100%;
 }
 .img-links li a {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 .img-links li a:hover,
 .img-links li a:focus {
@@ -2180,7 +2180,7 @@ ol li {
   color: #00709f;
 }
 .cources-slider .slider li a:hover {
-  color: #ff6112;
+  color: #ff6600;
 }
 .cources-slider .slider li p {
   padding-top: 3px;
@@ -2412,7 +2412,7 @@ footer .develop-desktop a:focus {
 .popup .price strong {
   font-size: 26px;
   line-height: 19px;
-  color: #ff6112;
+  color: #ff6600;
   font-family: 'PFDinTextPro-Medium';
   display: inline-block;
   position: relative;
@@ -2427,7 +2427,7 @@ footer .develop-desktop a:focus {
   right: 2px;
   left: 0;
   height: 1px;
-  background: #ff6112;
+  background: #ff6600;
   top: 50%;
   margin-top: 2px;
 }
@@ -2442,6 +2442,9 @@ footer .develop-desktop a:focus {
   z-index: 2;
 }
 /* Helpers */
+.hidden {
+  display: none;
+}
 .img-full-width {
   display: block;
   width: 100%;
@@ -2535,7 +2538,7 @@ footer .develop-desktop a:focus {
 }
 .courses-main-title .courses-label {
   color: #fff;
-  background: #ff6112;
+  background: #ff6600;
   font-size: 18px;
   line-height: 32px;
   right: 100%;
@@ -2554,7 +2557,7 @@ footer .develop-desktop a:focus {
   height: 0;
   border-style: solid;
   border-width: 16px 0 16px 12px;
-  border-color: transparent transparent transparent #ff6112;
+  border-color: transparent transparent transparent #ff6600;
 }
 .courses-col-list {
   box-sizing: border-box;
@@ -2584,8 +2587,8 @@ footer .develop-desktop a:focus {
   border-bottom: 1px solid rgba(0, 112, 159, 0.3);
 }
 .courses-program-aside-item .link.-orange {
-  color: #ff6112;
-  border-bottom: 1px solid rgba(255, 97, 18, 0.3);
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
 }
 .courses-program-more > a {
   color: #9a3001;
@@ -2614,7 +2617,7 @@ footer .develop-desktop a:focus {
   margin-bottom: 4px;
 }
 .courses-col-prices .courses-price-block .courses-price {
-  color: #ff6112;
+  color: #ff6600;
   font: bold 53px/0.7 "PFHandbookPro-Regular";
   letter-spacing: -0.025em;
   margin-bottom: 2px;
@@ -2636,6 +2639,13 @@ footer .develop-desktop a:focus {
   margin-bottom: 7px;
 }
 .courses-request-btn {
+  transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  -webkit-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Safari and Chrome */
+  -moz-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Firefox 4 */
+  -o-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Opera */
   font: 24px/1.2 "PFHandbookPro-Regular";
   color: #fff;
   background: #00709f;
@@ -2663,7 +2673,7 @@ footer .develop-desktop a:focus {
   padding-top: 50px;
 }
 .courses-aside-title {
-  color: #ff6112;
+  color: #ff6600;
   font: bold 24px/1 "PFHandbookPro-Regular";
   margin: -4px 0 18px 0;
 }
@@ -2750,7 +2760,149 @@ h3 .reviews-link {
 .recommend-title > a:hover {
   border-bottom-color: transparent;
 }
-/* Modals */
-.remodal {
+.modal-request {
+  padding: 30px 30px 40px;
   text-align: left;
+}
+.modal-request .modal-close {
+  transition: all 0.3s;
+  background: url(../images/modal-close.png) 0 0 no-repeat;
+  border: none;
+  height: 17px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 18px;
+}
+.modal-request .modal-close:hover {
+  opacity: .6;
+}
+.modal-request h3.big {
+  padding-bottom: 14px;
+  padding-right: 20px;
+}
+.modal-request .modal-request-content {
+  margin-bottom: 10px;
+}
+.modal-request .modal-request-footer {
+  text-align: center;
+}
+.modal-request .modal-request-footer.-top-indent {
+  padding-top: 22px;
+}
+.modal-request .modal-btn {
+  transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  -webkit-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Safari and Chrome */
+  -moz-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Firefox 4 */
+  -o-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Opera */
+  border: none;
+  background: #ff6600;
+  color: #fff;
+  cursor: pointer;
+  font: 18px "PFHandbookPro-Regular";
+  padding: 5px 15px;
+  text-align: center;
+}
+.modal-request .modal-btn.-after {
+  position: relative;
+  margin-left: -5px;
+}
+.modal-request .modal-btn.-after:after {
+  transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  -webkit-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Safari and Chrome */
+  -moz-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Firefox 4 */
+  -o-transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
+  /* Opera */
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 0 16px 12px;
+  border-color: transparent transparent transparent #ff6600;
+}
+.modal-request .modal-btn:hover {
+  background-color: #b33700;
+}
+.modal-request .modal-btn:hover:after {
+  border-color: transparent transparent transparent #b33700;
+}
+.request-variant-list {
+  display: table;
+  margin: 0 -12px;
+  width: 100%;
+}
+.request-variant-list > .item {
+  box-sizing: border-box;
+  display: table-cell;
+  text-align: center;
+  width: 33.3333%;
+  height: 230px;
+  border: 2px solid transparent;
+  position: relative;
+  cursor: pointer;
+  padding: 16px 10px;
+  vertical-align: top;
+}
+.request-variant-list > .item.checked {
+  border-color: #ff6600;
+}
+.request-variant-list > .item.checked .modal-btn {
+  background-color: #ff6600 !important;
+}
+.request-variant-list > .item.actual-price-only {
+  padding-top: 37px;
+}
+.request-variant-list > .item.single-lesson {
+  padding-top: 36px;
+}
+.request-variant-list > .item.single-lesson > .title {
+  margin-bottom: 6px;
+}
+.request-variant-list > .item .old-price,
+.request-variant-list > .item .title {
+  font: 18px/1 "PFHandbookPro-Regular";
+  text-transform: uppercase;
+}
+.request-variant-list > .item .old-price {
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+.request-variant-list > .item .old-price > .rouble {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 15px;
+}
+.request-variant-list > .item .actual-price {
+  color: #ff6600;
+  font: bold 53px/0.7 "PFHandbookPro-Regular";
+  letter-spacing: -0.025em;
+  margin-bottom: 12px;
+}
+.request-variant-list > .item .actual-price > .rouble {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 38px;
+}
+.request-variant-list > .item .text {
+  line-height: 1;
+  color: #808080;
+}
+.request-variant-list > .item:hover .modal-btn {
+  background: #085076;
+}
+.request-variant-list .modal-btn {
+  background-color: #00709f;
+  box-sizing: border-box;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 106px;
+  position: absolute;
+  bottom: 26px;
 }
