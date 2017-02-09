@@ -2788,7 +2788,10 @@ h3 .reviews-link {
   text-align: center;
 }
 .modal-request .modal-request-footer.-top-indent {
-  padding-top: 22px;
+  padding-top: 17px;
+}
+.modal-request .modal-request-footer.-form-footer {
+  text-align: left;
 }
 .modal-request .modal-btn {
   transition: color 0.3s, background 0.3s, border 0.3s, transform 0.3s;
@@ -2905,4 +2908,103 @@ h3 .reviews-link {
   width: 106px;
   position: absolute;
   bottom: 26px;
+}
+.modal-subtitle {
+  color: #ff6600;
+  font: 22px/1.1 "PFHandbookPro-Regular";
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+.form-styles .form-row {
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.form-styles .form-row.-payment {
+  padding-top: 10px;
+}
+.form-styles .form-row > label,
+.form-styles .form-row > input,
+.form-styles .form-row > textarea,
+.form-styles .form-row > .form-label,
+.form-styles .form-row > .form-radio-group {
+  float: left;
+}
+.form-styles .form-row > label {
+  line-height: 38px;
+  width: 94px;
+}
+.form-styles .form-row > label.area-label {
+  line-height: 26px;
+}
+.form-styles .form-row .form-label {
+  width: 94px;
+}
+.form-styles input,
+.form-styles textarea {
+  box-sizing: border-box;
+  border: 1px solid #d0d0d0;
+  padding: 8px 10px;
+  width: 290px;
+}
+.form-styles textarea {
+  resize: none;
+  height: 68px;
+}
+.form-styles .form-radio {
+  margin-right: 20px;
+  position: relative;
+  padding-left: 18px;
+  float: left;
+}
+.form-styles .form-radio > input {
+  width: auto;
+  float: left;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+.form-styles .form-radio > label {
+  display: block;
+  line-height: 17px;
+  margin-bottom: 2px;
+}
+.form-styles .course-payment-before {
+  width: 92px;
+}
+.form-styles .course-payment-card {
+  width: 172px;
+}
+.modal-back-button {
+  color: #231f20;
+  border-bottom: 1px solid rgba(35, 31, 32, 0.3);
+  cursor: pointer;
+  margin-right: 96px;
+  position: relative;
+  margin-left: 16px;
+}
+.modal-back-button:before {
+  content: "";
+  position: relative;
+  width: 16px;
+  height: 12px;
+  background: url(../images/back-arrow.png) 0 0 no-repeat;
+  display: inline-block;
+  position: absolute;
+  left: -16px;
+  top: 5px;
+}
+.modal-back-button:hover {
+  border-color: transparent;
+}
+.radio-block {
+  float: left;
+  width: 290px;
+  height: 88px;
+  box-sizing: border-box;
+  padding: 8px;
+  overflow-y: auto;
+  border: 1px solid #d0d0d0;
+}
+.radio-block .form-radio {
+  margin-bottom: 5px;
 }

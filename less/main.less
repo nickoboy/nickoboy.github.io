@@ -2294,7 +2294,10 @@ footer{
   .modal-request-footer {
     text-align: center;
     &.-top-indent {
-      padding-top: 22px;
+      padding-top: 17px;
+    }
+    &.-form-footer {
+      text-align: left;
     }
   }
   .modal-btn {
@@ -2404,5 +2407,109 @@ footer{
     width: 106px;
     position: absolute;
     bottom: 26px;
+  }
+}
+
+.modal-subtitle {
+  color: @col2;
+  font: 22px/1.1 @font2;
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+
+.form-styles {
+  .form-row {
+    margin-bottom: 12px;
+    overflow: hidden;
+    &.-payment {
+      padding-top: 10px;
+    }
+    > label,
+    > input,
+    > textarea,
+    > .form-label,
+    > .form-radio-group {
+      float: left;
+    }
+    > label {
+      line-height: 38px;
+      width: 94px;
+      &.area-label {
+        line-height: 26px;
+      }
+    }
+    .form-label {
+      width: 94px;
+    }
+  }
+  input,
+  textarea {
+    box-sizing: border-box;
+    border: 1px solid #d0d0d0;
+    padding: 8px 10px;
+    width: 290px;
+  }
+  textarea {
+    resize: none;
+    height: 68px;
+  }
+  .form-radio {
+    margin-right: 20px;
+    position: relative;
+    padding-left: 18px;
+    float: left;
+    > input {
+      width: auto;
+      float: left;
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+    > label {
+      display: block;
+      line-height: 17px;
+      margin-bottom: 2px;
+    }
+  }
+  .course-payment-before {
+    width: 92px;
+  }
+  .course-payment-card {
+    width: 172px;
+  }
+}
+
+.modal-back-button {
+  .link(@col1);
+  cursor: pointer;
+  margin-right: 96px;
+  position: relative;
+  margin-left: 16px;
+  &:before {
+    content: "";
+    position: relative;
+    width: 16px;
+    height: 12px;
+    background: url(../images/back-arrow.png) 0 0 no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: -16px;
+    top: 5px;
+  }
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.radio-block {
+  float: left;
+  width: 290px;
+  height: 88px;
+  box-sizing: border-box;
+  padding: 8px;
+  overflow-y: auto;
+  border: 1px solid #d0d0d0;
+  .form-radio {
+    margin-bottom: 5px;
   }
 }

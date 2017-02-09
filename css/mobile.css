@@ -945,6 +945,50 @@ th {
 .mobile .request-variant-list > .item .actual-price {
   margin-bottom: 6px;
 }
+.mobile .form-styles .form-row > label,
+.mobile .form-styles .form-row > input,
+.mobile .form-styles .form-row > textarea,
+.mobile .form-styles .form-row > .form-label,
+.mobile .form-styles .form-row > .form-radio-group {
+  float: none;
+  display: block;
+}
+.mobile .form-styles .form-row > label {
+  line-height: 1.1;
+  margin-bottom: 5px;
+  width: auto;
+}
+.mobile .form-styles .form-row > label.area-label {
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+.mobile .form-styles .form-row .form-label {
+  width: auto;
+  margin-bottom: 5px;
+}
+.mobile .form-styles .course-payment-before,
+.mobile .form-styles .course-payment-card {
+  width: auto;
+  margin-bottom: 5px;
+}
+.mobile .modal-request .modal-request-footer.-top-indent {
+  padding-top: 10px;
+}
+.mobile .modal-back-button {
+  margin-right: 50px;
+}
+.mobile .form-styles input,
+.mobile .form-styles textarea,
+.mobile .radio-block {
+  width: 80%;
+}
+.mobile .form-styles .form-radio > input {
+  width: auto;
+}
+.mobile .modal-subtitle {
+  font-size: 18px;
+  line-height: 1;
+}
 @media (max-width: 479px) {
   .mobile .course .thumb-course {
     max-width: 300px;
@@ -1090,5 +1134,17 @@ th {
     width: auto;
     float: none;
     margin: 0 -25px;
+  }
+  .mobile .form-styles input,
+  .mobile .form-styles textarea,
+  .mobile .radio-block {
+    width: 100%;
+  }
+  .mobile .modal-back-button {
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  .modal-request-footer.-form-footer .modal-btn {
+    margin-left: 15px;
   }
 }

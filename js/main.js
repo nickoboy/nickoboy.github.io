@@ -211,6 +211,26 @@ $(window).load(function(){
 		})
 	}
 
+	$('.js-take-course').on('click', function() {
+		$('.modal-request-selector').addClass('hidden');
+		$('.modal-full-course').removeClass('hidden');
+	});
+
+	$('.modal-back-button').on('click', function() {
+		$('.modal-request-selector').removeClass('hidden');
+		$('.modal-full-course').addClass('hidden');
+	});
+
+	$('.js-course-payment').on('click', function() {
+		$('.modal-payment-send').removeClass('hidden');
+		$('.modal-full-course').addClass('hidden');
+	});
+
+	$('.js-show-modal').on('click', function() {
+		$('.modal-request > div').addClass('hidden');
+		$('.modal-request-selector').removeClass('hidden');
+	});
+
 	/* form */
 
 	if ($('select').length){

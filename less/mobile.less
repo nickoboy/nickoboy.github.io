@@ -560,6 +560,53 @@
       }
     }
   }
+  .form-styles {
+    .form-row {
+      > label,
+      > input,
+      > textarea,
+      > .form-label,
+      > .form-radio-group {
+        float: none;
+        display: block;
+      }
+      > label {
+        line-height: 1.1;
+        margin-bottom: 5px;
+        width: auto;
+        &.area-label {
+          line-height: 1.1;
+          margin-bottom: 5px;
+        }
+      }
+      .form-label {
+        width: auto;
+        margin-bottom: 5px;
+      }
+    }
+    .course-payment-before,
+    .course-payment-card {
+      width: auto;
+      margin-bottom: 5px;
+    }
+  }
+  .modal-request .modal-request-footer.-top-indent {
+    padding-top: 10px;
+  }
+  .modal-back-button {
+    margin-right: 50px;
+  }
+  .form-styles input, .form-styles textarea,
+  .radio-block {
+    width: 80%;
+  }
+  .form-styles .form-radio > input {
+    width: auto;
+  }
+  .modal-subtitle {
+    font-size: 18px;
+    line-height: 1;
+  }
 }
 
 @media (max-width: 479px) {
@@ -702,6 +749,18 @@
       width: auto;
       float: none;
       margin: 0 -25px;
+    }
+  }
+  .mobile .form-styles input, .mobile .form-styles textarea, .mobile .radio-block {
+    width: 100%;
+  }
+  .mobile .modal-back-button {
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  .modal-request-footer.-form-footer {
+    .modal-btn {
+      margin-left: 15px;
     }
   }
 }
