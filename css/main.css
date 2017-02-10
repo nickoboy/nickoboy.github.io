@@ -381,6 +381,12 @@ th {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'ALSRubl';
+  src: url('../fonts/rouble/ALSRubl.eot?#iefix') format('embedded-opentype'), url('../fonts/rouble/ALSRubl.otf') format('opentype'), url('../fonts/rouble/ALSRubl.woff') format('woff'), url('../fonts/rouble/ALSRubl.ttf') format('truetype'), url('../fonts/rouble/ALSRubl.svg#ALSRubl') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /* ==========================================================================
   Color variables
   ========================================================================== */
@@ -2622,8 +2628,11 @@ footer .develop-desktop a:focus {
   margin-bottom: 2px;
 }
 .courses-col-prices .courses-price-block .courses-price > .rouble {
-  font-family: Calibri, Arial, sans-serif;
   font-size: 38px;
+}
+.rouble {
+  font-family: 'ALSRubl' !important;
+  text-transform: none;
 }
 .courses-col-request {
   box-sizing: border-box;
