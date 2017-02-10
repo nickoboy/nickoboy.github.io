@@ -157,11 +157,11 @@
                                             <div class="courses-program-aside-title">Ближайшие занятия курса:</div>
                                             <div class="courses-program-aside-item">
                                                 <div class="date">13 сентября, 12.00</div>
-                                                <a href="#" class="link -blue">Лесной, 73 2-й день</a>
+                                                <a href="#modal-aside" class="link -blue js-show-modal-aside">Лесной, 73 2-й день</a>
                                             </div>
                                             <div class="courses-program-aside-item">
                                                 <div class="date">13 сентября, 12.00</div>
-                                                <a href="#" class="link -orange">Московский, 207 1-й день</a>
+                                                <a href="#modal-aside" class="link -blue js-show-modal-aside">Московский, 207 1-й день</a>
                                             </div>
                                             <div class="courses-program-more"><a href="#">Полное расписание</a></div>
                                         </div>
@@ -229,11 +229,11 @@
                                         <h4 class="courses-aside-title">2й день: говядина</h4>
                                         <div class="courses-aside-item">
                                             <div class="text">19&nbsp;января в&nbsp;19:00 Московский&nbsp;пр.,&nbsp;д.207 осталось 4&nbsp;места</div>
-                                            <a href="#" class="link link-bc-3">Записаться</a>
+                                            <a href="#modal-aside" class="link link-bc-3 js-show-modal-aside">Записаться</a>
                                         </div>
                                         <div class="courses-aside-item">
                                             <div class="text">23&nbsp;января в&nbsp;19:00 Московский&nbsp;пр.,&nbsp;д.207 осталось 4&nbsp;места</div>
-                                            <a href="#" class="link link-bc-3">Записаться</a>
+                                            <a href="#modal-aside" class="link link-bc-3 js-show-modal-aside">Записаться</a>
                                         </div>
                                     </div>
                                     <div class="subpage-content">
@@ -366,25 +366,25 @@
                 </div>
             </div>
         </div>
-        <div class="remodal modal-request" data-remodal-id="modal">
+        <div class="remodal modal-request js-modal-main" data-remodal-id="modal">
             <button data-remodal-action="close" class="modal-close"></button>
 
-            <div class="modal-request-selector">
+            <div class="modal-course-item modal-request-selector">
                 <h3 class="big color">Запись на&nbsp;курс <br>&laquo;Худеть или правильно питаться&nbsp;&mdash; это легко&raquo;</h3>
                 <p>Выберите удобный вариант записи:</p>
                 <ul class="request-variant-list">
-                    <li class="item checked js-full-course">
+                    <li class="item checked js-full-course" data-course-name="full-course">
                         <div class="old-price">10000 <span class="rouble">&#x20bd;</span></div>
                         <div class="actual-price">9000 <span class="rouble">&#x20bd;</span></div>
                         <div class="title">полный курс</div>
                         <div class="modal-btn">Выбрано</div>
                     </li>
-                    <li class="item actual-price-only js-full-course">
+                    <li class="item actual-price-only js-full-course" data-course-name="single-lesson">
                         <div class="actual-price">2000 <span class="rouble">&#x20bd;</span></div>
                         <div class="title">разовое занятие</div>
                         <div class="modal-btn">Выбрать</div>
                     </li>
-                    <li class="item single-lesson js-single-lesson">
+                    <li class="item single-lesson js-single-lesson" data-course-name="free-application">
                         <div class="title">Свободная заявка на курс</div>
                         <div class="text">администратор свяжется с&nbsp;вами для уточнения деталей</div>
                         <div class="modal-btn">Выбрать</div>
@@ -395,25 +395,20 @@
                 </div>
             </div>
 
-            <div class="modal-full-course hidden">
+            <div class="modal-course-item modal-full-course hidden">
                 <h3 class="big color">Запись на&nbsp;разовое занятие курса &laquo;Юный кулинар. От&nbsp;10&nbsp;лет&raquo;</h3>
-                <div class="modal-subtitle">1&nbsp;ноября, 12:00 Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</div>
                 <p>Заполните поля, чтобы записаться на курс:</p>
                 <form id="form-full-course" class="form-styles">
                     <div class="form-row">
-                        <div class="form-label area-label">Дата занятия и площадка</div>
-                        <div class="radio-block">
+                        <div class="form-label area-label">Место проведения</div>
+                        <div class="radio-block -no-border">
                             <div class="form-radio">
-                                <input id="course-dat-01" type="radio" name="course-date" checked>
-                                <label for="course-date-01">1&nbsp;ноября, 12:00 Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                                <input id="course-place-01" type="radio" name="course-place" checked>
+                                <label for="course-place-01">Лесной пр., 207</label>
                             </div>
                             <div class="form-radio">
-                                <input id="course-dat-02" type="radio" name="course-date">
-                                <label for="course-date-02">5&nbsp;ноября, 12:00 Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
-                            </div>
-                            <div class="form-radio">
-                                <input id="course-dat-01" type="radio" name="course-date">
-                                <label for="course-date-03">7&nbsp;ноября, 12:00 Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                                <input id="course-place-02" type="radio" name="course-place">
+                                <label for="course-place-02">Московский пр., 207</label>
                             </div>
                         </div>
                     </div>
@@ -455,7 +450,121 @@
                 </div>
             </div>
 
-            <div class="modal-payment-send hidden">
+            <div class="modal-course-item modal-single-lesson hidden">
+                <h3 class="big color">Запись на&nbsp;разовое занятие курса &laquo;Юный кулинар. От&nbsp;10&nbsp;лет&raquo;</h3>
+                <p>Заполните поля, чтобы записаться на курс:</p>
+                <form id="form-full-course" class="form-styles">
+                    <div class="form-row">
+                        <div class="form-label area-label">Дата занятия и площадка</div>
+                        <div class="radio-block">
+                            <div class="form-radio">
+                                <input id="course-dat-01" type="radio" name="course-date" checked>
+                                <label for="course-date-01"><b>1&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="course-dat-02" type="radio" name="course-date">
+                                <label for="course-date-02"><b>5&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="course-dat-01" type="radio" name="course-date">
+                                <label for="course-date-03"><b>7&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Имя *</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Почта *</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="tel">Телефон *</label>
+                        <input id="tel" name="tel" type="tel">
+                    </div>
+                    <div class="form-row">
+                        <label class="area-label" for="comments">Пожелания</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Оплата</div>
+                        <div class="form-radio-group">
+                            <div class="form-radio course-payment-before">
+                                <input id="course-payment-before" type="radio" name="course-payment" checked>
+                                <label for="course-payment-before">В&nbsp;кулинарной школе перед занятием</label>
+                            </div>
+                            <div class="form-radio course-payment-card">
+                                <input id="course-payment-card" type="radio" name="course-payment">
+                                <label for="course-payment-card">Пластиковыми картами и&nbsp;электронными деньгами</label>
+                                <img src="images/form_payments.png" height="20" width="100" alt="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-request-footer -top-indent -form-footer">
+                    <span class="modal-back-button">Назад к шагу 1</span>
+                    <button type="submit" class="modal-btn -after js-course-payment">Шаг 3: Оплата</button>
+                </div>
+            </div>
+
+            <div class="modal-course-item modal-free-application hidden">
+                <h3 class="big color">Запись на&nbsp;разовое занятие курса &laquo;Юный кулинар. От&nbsp;10&nbsp;лет&raquo;</h3>
+                <div class="modal-subtitle">1&nbsp;ноября, 12:00 Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</div>
+                <p>Заполните поля, чтобы записаться на курс:</p>
+                <form id="form-full-course" class="form-styles">
+                    <div class="form-row">
+                        <div class="form-label area-label">Дата занятия и площадка</div>
+                        <div class="radio-block">
+                            <div class="form-radio">
+                                <input id="course-dat-01" type="radio" name="course-date" checked>
+                                <label for="course-date-01"><b>1&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="course-dat-02" type="radio" name="course-date">
+                                <label for="course-date-02"><b>5&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="course-dat-01" type="radio" name="course-date">
+                                <label for="course-date-03"><b>7&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Имя *</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Почта *</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="tel">Телефон *</label>
+                        <input id="tel" name="tel" type="tel">
+                    </div>
+                    <div class="form-row">
+                        <label class="area-label" for="comments">Пожелания</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Оплата</div>
+                        <div class="form-radio-group">
+                            <div class="form-radio course-payment-before">
+                                <input id="course-payment-before" type="radio" name="course-payment" checked>
+                                <label for="course-payment-before">В&nbsp;кулинарной школе перед занятием</label>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-request-footer -top-indent -form-footer">
+                    <span class="modal-back-button">Назад к шагу 1</span>
+                    <button type="submit" class="modal-btn -after js-course-application-send">Шаг 3: Отправить заявку</button>
+                </div>
+            </div>
+
+            <div class="modal-course-item modal-payment-send hidden">
                 <div class="modal-request-content">
                     <h3 class="big color">Оплата прошла успешно</h3>
                     <p>Оплата на&nbsp;занятие &laquo;Китайская кухня&raquo; в&nbsp;сумме 1450 руб поступила к&nbsp;нам. <br>В&nbsp;течение дня администратор свяжется с&nbsp;вами для уточнения деталей.</p>
@@ -465,10 +574,83 @@
                 </div>
             </div>
 
-            <div class="modal-request-send hidden">
+            <div class="modal-course-item modal-application-send hidden">
                 <div class="modal-request-content">
                     <h3 class="big color">Заявка отправлена</h3>
                     <p>Заявка на&nbsp;занятие &laquo;Китайская кухня&raquo; успешно отправлена. В&nbsp;течение дня администратор свяжется с&nbsp;вами для уточнения деталей.</p>
+                </div>
+                <div class="modal-request-footer">
+                    <button data-remodal-action="confirm" class="modal-btn">Закрыть окно</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="remodal modal-request js-modal-aside" data-remodal-id="modal-aside">
+            <button data-remodal-action="close" class="modal-close"></button>
+
+            <div class="modal-course-item modal-single-lesson">
+                <h3 class="big color">Запись на&nbsp;разовое занятие курса &laquo;Юный кулинар. От&nbsp;10&nbsp;лет&raquo;</h3>
+                <div class="modal-subtitle">1&nbsp;ноября, 12:00 Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</div>
+                <p>Заполните поля, чтобы записаться на курс:</p>
+                <form id="form-full-course" class="form-styles">
+                    <div class="form-row">
+                        <div class="form-label area-label">Дата занятия и площадка</div>
+                        <div class="radio-block">
+                            <div class="form-radio">
+                                <input id="course-dat-01" type="radio" name="course-date" checked>
+                                <label for="course-date-01"><b>1&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="course-dat-02" type="radio" name="course-date">
+                                <label for="course-date-02"><b>5&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                            <div class="form-radio">
+                                <input id="course-dat-01" type="radio" name="course-date">
+                                <label for="course-date-03"><b>7&nbsp;ноября, 12:00</b> Лесной пр., 207 <br>День&nbsp;1. Учимся готовить из&nbsp;куриного филе</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="name">Имя *</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Почта *</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="tel">Телефон *</label>
+                        <input id="tel" name="tel" type="tel">
+                    </div>
+                    <div class="form-row">
+                        <label class="area-label" for="comments">Пожелания</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-label">Оплата</div>
+                        <div class="form-radio-group">
+                            <div class="form-radio course-payment-before">
+                                <input id="course-payment-before" type="radio" name="course-payment" checked>
+                                <label for="course-payment-before">В&nbsp;кулинарной школе перед занятием</label>
+                            </div>
+                            <div class="form-radio course-payment-card">
+                                <input id="course-payment-card" type="radio" name="course-payment">
+                                <label for="course-payment-card">Пластиковыми картами и&nbsp;электронными деньгами</label>
+                                <img src="images/form_payments.png" height="20" width="100" alt="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-request-footer -top-indent">
+                    <button type="submit" class="modal-btn -after js-course-payment">Шаг 2: Оплата</button>
+                </div>
+            </div>
+
+            <div class="modal-course-item modal-payment-send hidden">
+                <div class="modal-request-content">
+                    <h3 class="big color">Оплата прошла успешно</h3>
+                    <p>Оплата на&nbsp;занятие &laquo;Китайская кухня&raquo; в&nbsp;сумме 1450 руб поступила к&nbsp;нам. <br>В&nbsp;течение дня администратор свяжется с&nbsp;вами для уточнения деталей.</p>
                 </div>
                 <div class="modal-request-footer">
                     <button data-remodal-action="confirm" class="modal-btn">Закрыть окно</button>

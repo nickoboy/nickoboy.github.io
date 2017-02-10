@@ -212,23 +212,42 @@ $(window).load(function(){
 	}
 
 	$('.js-take-course').on('click', function() {
-		$('.modal-request-selector').addClass('hidden');
-		$('.modal-full-course').removeClass('hidden');
+		var checkedCourse = $('.request-variant-list > .item.checked');
+
+		$('.modal-course-item').addClass('hidden');
+
+		if (checkedCourse.data("course-name") === 'full-course') {
+		    $('.modal-full-course').removeClass('hidden');
+		} else if (checkedCourse.data("course-name") === 'single-lesson') {
+		    $('.modal-single-lesson').removeClass('hidden');
+		} else if (checkedCourse.data("course-name") === 'free-application') {
+		    $('.modal-free-application').removeClass('hidden');
+		}
 	});
 
 	$('.modal-back-button').on('click', function() {
+		$('.modal-course-item').addClass('hidden');
 		$('.modal-request-selector').removeClass('hidden');
-		$('.modal-full-course').addClass('hidden');
 	});
 
 	$('.js-course-payment').on('click', function() {
+		$('.modal-course-item').addClass('hidden');
 		$('.modal-payment-send').removeClass('hidden');
-		$('.modal-full-course').addClass('hidden');
+	});
+
+	$('.js-course-application-send').on('click', function() {
+		$('.modal-course-item').addClass('hidden');
+		$('.modal-application-send').removeClass('hidden');
 	});
 
 	$('.js-show-modal').on('click', function() {
-		$('.modal-request > div').addClass('hidden');
-		$('.modal-request-selector').removeClass('hidden');
+		$('.js-modal-main .modal-course-item').addClass('hidden');
+		$('.js-modal-main .modal-request-selector').removeClass('hidden');
+	});
+
+	$('.js-show-modal-aside').on('click', function() {
+		$('.js-modal-aside .modal-course-item').addClass('hidden');
+		$('.js-modal-aside .modal-single-lesson').removeClass('hidden');
 	});
 
 	/* form */

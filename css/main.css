@@ -2577,7 +2577,6 @@ footer .develop-desktop a:focus {
   display: inline-block;
   padding: 1px 5px 3px;
   line-height: 1;
-  margin-bottom: 4px;
 }
 .courses-program-aside-item .link:hover {
   border-color: transparent !important;
@@ -3004,6 +3003,11 @@ h3 .reviews-link {
   padding: 8px;
   overflow-y: auto;
   border: 1px solid #d0d0d0;
+}
+.radio-block.-no-border {
+  border: none;
+  height: auto;
+  padding-top: 0;
 }
 .radio-block .form-radio {
   margin-bottom: 5px;
