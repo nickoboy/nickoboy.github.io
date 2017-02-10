@@ -2627,10 +2627,8 @@ footer .develop-desktop a:focus {
   letter-spacing: -0.025em;
   margin-bottom: 2px;
 }
-.courses-col-prices .courses-price-block .courses-price > .rouble {
-  font-size: 38px;
-}
 .rouble {
+  font-size: 34px;
   font-family: 'ALSRubl' !important;
   text-transform: none;
 }
