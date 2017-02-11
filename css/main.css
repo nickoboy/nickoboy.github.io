@@ -2463,6 +2463,26 @@ footer .develop-desktop a:focus {
 .clearfix:after {
   clear: both;
 }
+.magnify {
+  background: #000;
+  cursor: pointer;
+  position: relative;
+}
+.magnify:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/magnify.png) 50% 50% no-repeat;
+}
+.magnify img {
+  transition: all 0.2s;
+}
+.magnify:hover img {
+  opacity: 0.5;
+}
 /* Base styles */
 .wrap-inner {
   padding: 0 15px;
@@ -2703,9 +2723,9 @@ footer .develop-desktop a:focus {
   float: left;
   margin: 0 0 30px 20px;
   text-align: center;
-  width: 210px;
+  width: 209px;
 }
-.courses-carousel-item > img {
+.courses-carousel-item > .img {
   margin-bottom: 8px;
 }
 .courses-carousel-item > .title {
@@ -2769,6 +2789,10 @@ h3 .reviews-link {
 .modal-request {
   padding: 30px 30px 40px;
   text-align: left;
+}
+.modal-request.-wide {
+  max-width: 960px;
+  padding: 0;
 }
 .modal-request .modal-close {
   transition: all 0.3s;
@@ -2886,7 +2910,7 @@ h3 .reviews-link {
 }
 .request-variant-list > .item .old-price > .rouble {
   font-family: Calibri, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px;
 }
 .request-variant-list > .item .actual-price {
   color: #ff6600;
@@ -3018,4 +3042,12 @@ h3 .reviews-link {
 }
 .radio-block .form-radio {
   margin-bottom: 5px;
+}
+.modal-recipe-img {
+  float: left;
+  width: 60%;
+}
+.modal-recipe-desc {
+  overflow: hidden;
+  padding: 60px 30px 15px 13px;
 }

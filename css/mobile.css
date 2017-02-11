@@ -907,6 +907,10 @@ th {
   background: #f7f7f7;
   padding-bottom: 20px;
 }
+.mobile .courses-col-request .text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .mobile .courses-col-request .btn-block {
   padding-bottom: 0;
 }
@@ -922,10 +926,13 @@ th {
   font-size: 44px;
 }
 .mobile .courses-col-prices .courses-price-block .courses-price > .rouble {
-  font-size: 30px;
+  font-size: 26px;
 }
 .mobile .modal-request {
   padding-top: 45px;
+}
+.mobile .modal-request.-wide {
+  padding-top: 0;
 }
 .mobile .request-variant-list {
   display: block;
@@ -994,6 +1001,14 @@ th {
 .mobile .modal-subtitle {
   font-size: 18px;
   line-height: 1;
+}
+.mobile .modal-recipe-img {
+  float: none;
+  width: auto;
+}
+.mobile .modal-recipe-desc {
+  overflow: hidden;
+  padding: 20px 15px 15px;
 }
 @media (max-width: 479px) {
   .mobile .course .thumb-course {

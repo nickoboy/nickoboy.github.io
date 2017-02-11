@@ -1934,6 +1934,29 @@ footer{
   }
 }
 
+.magnify {
+  background: #000;
+  cursor: pointer;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/magnify.png) 50% 50% no-repeat;
+  }
+  img {
+    transition: all 0.2s;
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+    }
+  }
+}
+
 /* Base styles */
 
 .wrap-inner {
@@ -2113,14 +2136,12 @@ footer{
       font: bold 53px/0.7 @font2;
       letter-spacing: -0.025em;
       margin-bottom: 2px;
-      > .rouble {
-        font-size: 38px;
-      }
     }
   }
 }
 
 .rouble {
+  font-size: 34px;
   font-family: @rouble !important;
   text-transform: none;
 }
@@ -2198,8 +2219,8 @@ footer{
   float: left;
   margin: 0 0 30px 20px;
   text-align: center;
-  width: 210px;
-  > img {
+  width: 209px;
+  > .img {
     margin-bottom: 8px;
   }
   > .title {
@@ -2274,6 +2295,10 @@ footer{
 .modal-request {
   padding: 30px 30px 40px;
   text-align: left;
+  &.-wide {
+    max-width: 960px;
+    padding: 0;
+  }
   .modal-close {
     transition: all 0.3s;
     background: url(../images/modal-close.png) 0 0 no-repeat;
@@ -2377,7 +2402,7 @@ footer{
       margin-bottom: 4px;
       > .rouble {
         font-family: @font1;
-        font-size: 15px;
+        font-size: 14px;
       }
     }
     .actual-price {
@@ -2387,7 +2412,7 @@ footer{
       margin-bottom: 12px;
       > .rouble {
         font-family: @font1;
-        font-size: 38px;
+        font-size: 34px;
       }
     }
     .text {
@@ -2520,4 +2545,14 @@ footer{
   .form-radio {
     margin-bottom: 5px;
   }
+}
+
+.modal-recipe-img {
+  float: left;
+  width: 60%;
+}
+
+.modal-recipe-desc {
+  overflow: hidden;
+  padding: 60px 30px 15px 13px;
 }

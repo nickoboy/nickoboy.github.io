@@ -509,6 +509,10 @@
     width: 55%;
     background: #f7f7f7;
     padding-bottom: 20px;
+    .text {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     .btn-block {
       padding-bottom: 0;
     }
@@ -526,13 +530,16 @@
         color: @col2;
         font-size: 44px;
         > .rouble {
-          font-size: 30px;
+          font-size: 26px;
         }
       }
     }
   }
   .modal-request {
     padding-top: 45px;
+    &.-wide {
+      padding-top: 0;
+    }
   }
   .request-variant-list {
     display: block;
@@ -606,6 +613,15 @@
   .modal-subtitle {
     font-size: 18px;
     line-height: 1;
+  }
+  .modal-recipe-img {
+    float: none;
+    width: auto;
+  }
+
+  .modal-recipe-desc {
+    overflow: hidden;
+    padding: 20px 15px 15px;
   }
 }
 
