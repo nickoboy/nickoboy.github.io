@@ -404,6 +404,11 @@ th {
     background-size: auto 105%;
   }
 }
+@media (min-width: 640px) {
+  .menu-button-container {
+    min-height: 0 !important;
+  }
+}
 /*
 @media (max-width: 959px) {
   .top-menu li{
@@ -1010,6 +1015,82 @@ th {
   overflow: hidden;
   padding: 20px 15px 15px;
 }
+.mobile .subpage-main {
+  margin-top: 0;
+  margin: 0 0 50px 0;
+  padding: 0 20px;
+}
+.mobile .h1-subpage {
+  font-size: 28px;
+}
+.mobile .coords-top {
+  padding-top: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 20px;
+}
+.mobile .coords-map-block {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mobile .coords-map-block > .img {
+  margin-bottom: 16px;
+}
+.mobile .coords-map-block > .title {
+  font-size: 20px;
+}
+.mobile .coords-map-block > .desc {
+  font-size: 15px;
+}
+.mobile .contact-form-wrap,
+.mobile .contact-aside {
+  float: none;
+  width: auto;
+  margin: 0;
+}
+.mobile .contact-form-wrap {
+  margin-bottom: 30px;
+  padding: 25px 30px 40px;
+}
+.mobile .contact-info {
+  margin-bottom: 35px;
+}
+.mobile .courses-program-aside-title {
+  font-size: 22px;
+}
+.mobile .courses-program-aside-item .date {
+  float: left;
+  margin-right: 5px;
+}
+.mobile .contact-form > .form-row {
+  margin-left: 0;
+}
+.mobile .contact-form > .form-row > label {
+  position: static;
+  top: auto;
+  left: auto;
+  margin-bottom: 6px;
+  display: block;
+}
+.mobile .contact-form > .form-row > label > br {
+  display: none;
+}
+.mobile .contact-form > button {
+  margin-left: 0;
+}
+.mobile .contact-form-wrap > h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.mobile .coords-map-block > .title > br {
+  display: block;
+}
+.mobile .slogan {
+  display: none;
+}
+.mobile .mobile-banner-wrap {
+  display: table;
+}
 @media (max-width: 479px) {
   .mobile .course .thumb-course {
     max-width: 300px;
@@ -1167,5 +1248,13 @@ th {
   }
   .modal-request-footer.-form-footer .modal-btn {
     margin-left: 15px;
+  }
+  .coords-map-block {
+    float: none;
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .mobile .coords-top {
+    margin-bottom: 0;
   }
 }

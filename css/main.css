@@ -2718,15 +2718,19 @@ footer .develop-desktop a:focus {
 }
 .courses-carousel {
   margin-left: -20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .courses-carousel-item {
-  float: left;
   margin: 0 0 30px 20px;
   text-align: center;
   width: 209px;
 }
 .courses-carousel-item > .img {
   margin-bottom: 8px;
+}
+.courses-carousel-item > .img img {
+  width: 100%;
 }
 .courses-carousel-item > .title {
   line-height: 1;
@@ -3050,4 +3054,156 @@ h3 .reviews-link {
 .modal-recipe-desc {
   overflow: hidden;
   padding: 60px 30px 15px 13px;
+}
+.subpage-container {
+  display: block;
+}
+.subpage-main {
+  margin-left: 20%;
+  padding-right: 80px;
+  margin-top: -340px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 10;
+}
+.h1-subpage {
+  color: #00709f;
+  font: 48px/0.9 "PFHandbookPro-Regular";
+}
+.coords-top {
+  padding-top: 14px;
+  margin: 0 -22px 66px;
+}
+.coords-bottom {
+  padding-top: 14px;
+}
+.coords-map-block {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 0 22px;
+}
+.coords-map-block > .img {
+  margin-bottom: 16px;
+}
+.coords-map-block > .img img {
+  width: 100%;
+}
+.coords-map-block > .title {
+  font: 22px/1 "PFHandbookPro-Regular";
+  color: #00709f;
+  margin-bottom: 6px;
+}
+.coords-map-block > .title > br {
+  display: none;
+}
+.coords-map-block > .desc {
+  font-size: 16px;
+}
+.contact-form-wrap {
+  box-sizing: border-box;
+  background: #f5f6f8;
+  width: 65%;
+  padding: 34px 50px 58px 30px;
+  margin-right: 5%;
+  float: left;
+}
+.contact-form-wrap > h2 {
+  color: #00709f;
+  font: 36px/1 "PFHandbookPro-Regular";
+  margin-bottom: 32px;
+}
+.contact-form > .form-row {
+  position: relative;
+  margin-left: 94px;
+  margin-bottom: 12px;
+}
+.contact-form > .form-row > label {
+  position: absolute;
+  left: -94px;
+  top: 10px;
+  line-height: 1;
+}
+.contact-form > .form-row > input,
+.contact-form > .form-row > textarea {
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 10px;
+}
+.contact-form > .form-row > textarea {
+  resize: none;
+  height: 88px;
+}
+.contact-form > button {
+  box-sizing: border-box;
+  border: none;
+  height: 32px;
+  padding: 5px 16px;
+  font: 18px / normal "PFHandbookPro-Regular";
+  background: #00709f;
+  color: #fff;
+  margin-left: 94px;
+  margin-top: 14px;
+  position: relative;
+}
+.contact-form > button:after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 0 16px 12px;
+  border-color: transparent transparent transparent #00709f;
+}
+.contact-form > button:hover {
+  background-color: #005e86;
+}
+.contact-form > button:hover:after {
+  border-color: transparent transparent transparent #005e86;
+}
+.contact-aside {
+  float: left;
+  width: 30%;
+}
+.contact-aside .link {
+  color: #ff6600;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.3);
+}
+.contact-aside .link:hover,
+.contact-aside .link:focus {
+  color: #00709f;
+  border-bottom: 1px solid rgba(0, 112, 159, 0.3);
+}
+.contact-info {
+  margin-bottom: 40px;
+}
+.contact-info > .email {
+  margin-bottom: 12px;
+}
+.contact-info > .contact-social {
+  margin-bottom: 10px;
+}
+.contact-info > .requisites img {
+  vertical-align: bottom;
+}
+.mobile-banner-wrap {
+  display: none;
+  width: 100%;
+}
+.mobile-banner-wrap > a {
+  color: #fff;
+  background: #ff6817;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  height: 80px;
+  font: 20px/0.9 "PFHandbookPro-Regular";
+}
+.mobile-banner-wrap > a.-bg {
+  background: #ff6817 url(../images/ban-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
 }
