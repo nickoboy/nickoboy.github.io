@@ -1042,6 +1042,9 @@ th {
 .mobile .coords-map-block > .desc {
   font-size: 15px;
 }
+.mobile .coords-map-block > .desc > br {
+  display: block;
+}
 .mobile .contact-form-wrap,
 .mobile .contact-aside {
   float: none;

@@ -159,13 +159,13 @@ $(window).load(function(){
 		  }
 		  $slick_slider.slick(slickSettings);
 
-		  if ($(window).width() > 640) {
+		  if ($(window).width() >= 639) {
 		  		$slick_slider.slick('unslick');
 		  }
 
 		  // reslick only if it's not slick()
 		  $(window).on('resize', function() {
-		    if ($(window).width() > 640) {
+		    if ($(window).width() >= 639) {
 		      if ($slick_slider.hasClass('slick-initialized')) {
 		        $slick_slider.slick('unslick');
 		      }
@@ -266,16 +266,16 @@ $(window).load(function(){
 		$(".scale-site").css({width:'100%', transform:'scale(1,1)'});
 		$('#wrapper').css({height:'auto'});
 		var width = $(window).width();
-		if (width <= 640) {
+		if (width <= 639) {
 			$('body').addClass('mobile');
 		} else {				
 			$('body').removeClass('mobile');
 		}
-		if (width <= 960 && width > 640) {
+		if (width <= 960 && width > 639) {
 			$(".scale-site").css({width:'960px', transform:'scale('+width/960+')'});
 			$('#wrapper').css({height:$('#wrapper').height()*width/960})
 		}
-		if (width <= 640 && width > 480) {
+		if (width <= 639 && width > 480) {
 			//$("meta[name='viewport']").attr("content", 'width=480, initial-scale='+width/480);
 			$(".scale-site").css({width:'480px', transform:'scale('+width/480+')'});
 			$('#wrapper').css({height:$('#wrapper').height()*width/480})

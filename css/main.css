@@ -2534,6 +2534,9 @@ footer .develop-desktop a:focus {
   width: 100%;
   z-index: 1;
 }
+div:focus {
+  outline: none;
+}
 .slider-top-wide {
   height: 468px;
 }
@@ -3088,17 +3091,18 @@ h3 .reviews-link {
 }
 .coords-map-block > .img img {
   width: 100%;
+  display: none;
 }
 .coords-map-block > .title {
   font: 22px/1 "PFHandbookPro-Regular";
   color: #00709f;
   margin-bottom: 6px;
 }
-.coords-map-block > .title > br {
-  display: none;
-}
 .coords-map-block > .desc {
   font-size: 16px;
+}
+.coords-map-block > .desc > br {
+  display: none;
 }
 .contact-form-wrap {
   box-sizing: border-box;

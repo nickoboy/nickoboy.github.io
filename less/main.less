@@ -2016,6 +2016,10 @@ footer{
   z-index: 1;
 }
 
+div:focus {
+  outline: none;
+}
+
 .slider-top-wide {
   height: 468px;
   img {
@@ -2598,18 +2602,19 @@ footer{
     margin-bottom: 16px;
     img {
       width: 100%;
+      display: none;
     }
   }
   > .title {
     font: 22px/1 @font2;
     color: @col3;
     margin-bottom: 6px;
-    > br {
-      display: none;
-    }
   }
   > .desc {
     font-size: 16px;
+    > br {
+      display: none;
+    }
   }
 }
 
