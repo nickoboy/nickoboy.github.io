@@ -232,7 +232,11 @@ $(window).load(function(){
 
 	$('.js-course-payment').on('click', function() {
 		$('.modal-course-item').addClass('hidden');
-		$('.modal-payment-send').removeClass('hidden');
+		if ($('.payment-card').is(":checked")) {
+			$('.modal-payment-card').removeClass('hidden');
+		} else {
+			$('.modal-payment-send').removeClass('hidden');
+		}
 	});
 
 	$('.js-course-application-send').on('click', function() {
@@ -266,20 +270,20 @@ $(window).load(function(){
 		$(".scale-site").css({width:'100%', transform:'scale(1,1)'});
 		$('#wrapper').css({height:'auto'});
 		var width = $(window).width();
-		if (width <= 639) {
+		if (width <= 480) {
 			$('body').addClass('mobile');
 		} else {				
 			$('body').removeClass('mobile');
 		}
-		if (width <= 960 && width > 639) {
+		/*if (width <= 960 && width > 640) {
 			$(".scale-site").css({width:'960px', transform:'scale('+width/960+')'});
 			$('#wrapper').css({height:$('#wrapper').height()*width/960})
 		}
-		if (width <= 639 && width > 480) {
+		if (width <= 640 && width > 480) {
 			//$("meta[name='viewport']").attr("content", 'width=480, initial-scale='+width/480);
 			$(".scale-site").css({width:'480px', transform:'scale('+width/480+')'});
 			$('#wrapper').css({height:$('#wrapper').height()*width/480})
-		}
+		}*/
 		if (width <= 480 || width > 960) {
 			//$("meta[name='viewport']").attr("content", 'width=device-width, initial-scale=1');
 			$(".scale-site").css({width:'100%', transform:'scale(1,1)'});

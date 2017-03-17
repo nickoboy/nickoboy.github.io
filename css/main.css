@@ -524,6 +524,7 @@ body {
   color: #231f20;
   font-family: Calibri, Arial, sans-serif;
   background: #fff;
+  min-width: 960px;
 }
 a {
   text-decoration: none;

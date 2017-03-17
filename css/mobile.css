@@ -404,11 +404,11 @@ th {
     background-size: auto 105%;
   }
 }
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   .menu-button-container {
     min-height: 0 !important;
   }
-}
+} */
 /*
 @media (max-width: 959px) {
   .top-menu li{
@@ -1094,7 +1094,7 @@ th {
 .mobile .mobile-banner-wrap {
   display: table;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .mobile .course .thumb-course {
     max-width: 300px;
   }

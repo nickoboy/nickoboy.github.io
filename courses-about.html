@@ -486,7 +486,7 @@
                                 <label for="course-payment-before">В&nbsp;кулинарной школе перед занятием</label>
                             </div>
                             <div class="form-radio course-payment-card">
-                                <input id="course-payment-card" type="radio" name="course-payment">
+                                <input id="course-payment-card" class="payment-card" type="radio" name="course-payment">
                                 <label for="course-payment-card">Пластиковыми картами и&nbsp;электронными деньгами</label>
                                 <img src="images/form_payments.png" height="20" width="100" alt="">
                             </div>
@@ -541,12 +541,12 @@
                         <div class="form-label">Оплата</div>
                         <div class="form-radio-group">
                             <div class="form-radio course-payment-before">
-                                <input id="course-payment-before" type="radio" name="course-payment" checked>
-                                <label for="course-payment-before">В&nbsp;кулинарной школе перед занятием</label>
+                                <input id="course-payment-before-2" type="radio" name="course-payment" checked>
+                                <label for="course-payment-before-2">В&nbsp;кулинарной школе перед занятием</label>
                             </div>
                             <div class="form-radio course-payment-card">
-                                <input id="course-payment-card" type="radio" name="course-payment">
-                                <label for="course-payment-card">Пластиковыми картами и&nbsp;электронными деньгами</label>
+                                <input id="course-payment-card-2" class="payment-card" type="radio" name="course-payment">
+                                <label for="course-payment-card-2">Пластиковыми картами и&nbsp;электронными деньгами</label>
                                 <img src="images/form_payments.png" height="20" width="100" alt="">
                             </div>
                             <div class="clearfix"></div>
@@ -621,6 +621,32 @@
                 </div>
                 <div class="modal-request-footer">
                     <button data-remodal-action="confirm" class="modal-btn">Закрыть окно</button>
+                </div>
+            </div>
+
+            <div class="modal-course-item modal-payment-card hidden">
+                <div class="modal-request-content">
+                    <h3 class="big color">Переход на страницу оплаты</h3>
+                    <p>Заявка на&nbsp;занятие &laquo;Китайская кухня&raquo; отправлена, администратор свяжется с&nbsp;вами для уточнения деталей. Сейчас мы&nbsp;направим вас на&nbsp;страницу оплаты.</p>
+                    <form id="form-payment-method" class="form-styles">
+                        <b style="margin-bottom:10px;display:block;">Выберите способ оплаты</b>
+                        <div class="form-row">
+                            <div class="form-radio-group">
+                                <div class="form-radio course-payment-before">
+                                    <input id="course-payment-method-y" type="radio" name="course-payment-method">
+                                    <label for="course-payment-method-y">Яндекс.Деньги</label>
+                                </div>
+                                <div class="form-radio course-payment-card">
+                                    <input id="course-payment-method-b" type="radio" name="course-payment-method" checked>
+                                    <label for="course-payment-method-b">Банковская карта</label>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-request-footer">
+                    <button class="modal-btn">Оплатить</button>
                 </div>
             </div>
 
@@ -704,6 +730,32 @@
                 </div>
                 <div class="modal-request-footer">
                     <button data-remodal-action="confirm" class="modal-btn">Закрыть окно</button>
+                </div>
+            </div>
+
+            <div class="modal-course-item modal-payment-card hidden">
+                <div class="modal-request-content">
+                    <h3 class="big color">Переход на страницу оплаты</h3>
+                    <p>Заявка на&nbsp;занятие &laquo;Китайская кухня&raquo; отправлена, администратор свяжется с&nbsp;вами для уточнения деталей. Сейчас мы&nbsp;направим вас на&nbsp;страницу оплаты.</p>
+                    <form id="form-payment-method" class="form-styles">
+                        <b style="margin-bottom:10px;display:block;">Выберите способ оплаты</b>
+                        <div class="form-row">
+                            <div class="form-radio-group">
+                                <div class="form-radio course-payment-before">
+                                    <input id="course-payment-method-y" type="radio" name="course-payment-method">
+                                    <label for="course-payment-method-y">Яндекс.Деньги</label>
+                                </div>
+                                <div class="form-radio course-payment-card">
+                                    <input id="course-payment-method-b" type="radio" name="course-payment-method" checked>
+                                    <label for="course-payment-method-b">Банковская карта</label>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-request-footer">
+                    <button class="modal-btn">Оплатить</button>
                 </div>
             </div>
         </div>
